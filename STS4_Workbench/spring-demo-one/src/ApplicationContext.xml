@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- load property files -->
+    <context:property-placeholder location="classpath:sport.properties,
+                                            classpath:fortune.properties"></context:property-placeholder>
+    <!-- end property files -->
+    
+    <!-- load beans -->
+    <bean id="myLoggerConfig" class="com.luv2code.springdemo.MyLoggerConfig" init-method="initLogger">
+    	<property name="rootLoggerLevel" value="FINE" />
+    	<property name="printedLoggerLevel" value="FINE"/></bean>
+    
+    <!-- define dependency injection -->
+    <bean id="myFortune" class="com.luv2code.springdemo.HappyFortuneService">
+    		<property name="arrayOfFortunes" value="${foo.arrayOfFortunes}"></property>
+			<property name="maxArrayElements" value="${foo.maxArrayElements}"></property>
+			</bean>
+	
+	<bean id="myCoach" class="com.luv2code.springdemo.TrackCoach">
+	    	<constructor-arg ref="myFortune"></constructor-arg></bean>
+
+    <!-- end of dependency injection -->
+    
+	<!-- define setter method -->    	
+	<bean id="myCricketCoach" class="com.luv2code.springdemo.CricketCoach">
+			<!-- setter method -->
+			<property name="fortuneService" ref="myFortune"></property>
+			
+			<!-- set properties -->
+			<property name="emailAddress" value="${foo.emailAddress}"></property>
+			<property name="team" value="${foo.team}"></property>
+						
+			<!-- end of setter method -->
+			</bean>
+			
+	<!-- end of beans -->
+
+</beans>
