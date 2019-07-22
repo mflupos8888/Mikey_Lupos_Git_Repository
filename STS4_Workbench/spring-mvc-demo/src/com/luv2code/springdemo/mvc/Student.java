@@ -1,5 +1,7 @@
 package com.luv2code.springdemo.mvc;
 
+import java.util.List;
+
 public class Student {
 	
 	private String firstName;
@@ -8,8 +10,9 @@ public class Student {
 	
 	private String country;
 	
+	private List<List<String>> countryList;
+	
 	public Student() {
-		
 	}
 
 	public String getFirstName() {
@@ -34,6 +37,10 @@ public class Student {
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public List<List<String>> getCountryList() {
+		return countryList;
 	}
 	
 }
