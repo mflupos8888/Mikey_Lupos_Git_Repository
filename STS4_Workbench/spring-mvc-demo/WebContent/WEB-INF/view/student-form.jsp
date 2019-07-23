@@ -9,17 +9,22 @@
 <body>
 
 	<form:form action="processForm"  modelAttribute="student">
-	First name: <form:input path="firstName"></form:input>
+	First name  : <form:input path="firstName"></form:input>
 	<br><br>
-	Last name : <form:input path="lastName"></form:input>
+	Last name   : <form:input path="lastName"></form:input>
 	<br><br>
+	Nationality :
 	<form:select path="country">
-		<form:option value="Singapore"    label="Singapore"></form:option>
-		<form:option value="Japan"        label="Japan"></form:option>
-		<form:option value="Korea"        label="Korea"></form:option>
-		<form:option value="India"        label="India"></form:option>
-		<form:option value="Philippines"  label="Philippines"></form:option>
+		<form:options items="${theCountryOptions}"></form:options>
 	</form:select>
+	<br><br>
+	Favorite Programming Language : 
+	<form:radiobuttons path="favoriteLanguage" items="${theProgrammingLanguageList}"></form:radiobuttons>
+	<br><br>
+	Operating Systems:
+	Linux   <form:checkbox path="operatingSystems" value="Linux"></form:checkbox>
+	Windows <form:checkbox path="operatingSystems" value="Windows"></form:checkbox>
+	MacOS   <form:checkbox path="operatingSystems" value="MacOS"></form:checkbox>
 	<br><br>
 	<input type="submit" value="Submit"></input>
 	</form:form>

@@ -12,9 +12,12 @@ public class Student {
 	
 	private List<List<String>> countryList;
 	
-	public Student() {
-	}
-
+	private String favoriteLanguage;
+	
+	private List<List<String>> programmingLanguageList;
+	
+	private String[] operatingSystems;
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -43,4 +46,32 @@ public class Student {
 		return countryList;
 	}
 	
+	public void setCountryList(List<List<String>> countryList) {
+		this.countryList = countryList;
+	}
+
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
+	}
+
+	public List<List<String>> getProgrammingLanguageList() {
+		return programmingLanguageList;
+	}
+
+	public void setProgrammingLanguageList(List<List<String>> programmingLanguageList) {
+		this.programmingLanguageList = programmingLanguageList;
+	}
+
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
+	}
+
 }
