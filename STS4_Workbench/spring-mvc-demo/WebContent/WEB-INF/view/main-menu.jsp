@@ -11,6 +11,10 @@
 	
 	<hr><a href="student/showForm">Student Registration/Confirmation form</a>
 
+	<br><br>
+	
+	<hr><a href="customer/showForm">Customer Registration/Confirmation form</a>
+
 </body>
 
 </html>
