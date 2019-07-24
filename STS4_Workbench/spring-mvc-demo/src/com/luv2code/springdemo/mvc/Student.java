@@ -2,6 +2,8 @@ package com.luv2code.springdemo.mvc;
 
 import java.util.List;
 
+import com.luv2code.springdemo.mvc.validation.CourseCode;
+
 public class Student {
 	
 	private String firstName;
@@ -10,14 +12,17 @@ public class Student {
 	
 	private String country;
 	
+	@CourseCode
+	private String courseCode;
+	
 	private List<List<String>> countryList;
 	
-	private String favoriteLanguage;
-	
-	private List<List<String>> programmingLanguageList;
-	
+//	private String favoriteLanguage;
+//	
+//	private List<List<String>> programmingLanguageList;
+//	
 	private String[] operatingSystems;
-	
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -50,28 +55,36 @@ public class Student {
 		this.countryList = countryList;
 	}
 
-	public String getFavoriteLanguage() {
-		return favoriteLanguage;
-	}
-
-	public void setFavoriteLanguage(String favoriteLanguage) {
-		this.favoriteLanguage = favoriteLanguage;
-	}
-
-	public List<List<String>> getProgrammingLanguageList() {
-		return programmingLanguageList;
-	}
-
-	public void setProgrammingLanguageList(List<List<String>> programmingLanguageList) {
-		this.programmingLanguageList = programmingLanguageList;
-	}
-
+//	public String getFavoriteLanguage() {
+//		return favoriteLanguage;
+//	}
+//
+//	public void setFavoriteLanguage(String favoriteLanguage) {
+//		this.favoriteLanguage = favoriteLanguage;
+//	}
+//
+//	public List<List<String>> getProgrammingLanguageList() {
+//		return programmingLanguageList;
+//	}
+//
+//	public void setProgrammingLanguageList(List<List<String>> programmingLanguageList) {
+//		this.programmingLanguageList = programmingLanguageList;
+//	}
+//
 	public String[] getOperatingSystems() {
 		return operatingSystems;
 	}
 
 	public void setOperatingSystems(String[] operatingSystems) {
 		this.operatingSystems = operatingSystems;
+	}
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 
 }

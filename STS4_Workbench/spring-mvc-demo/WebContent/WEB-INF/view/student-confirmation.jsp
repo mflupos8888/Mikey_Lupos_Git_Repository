@@ -16,8 +16,11 @@
 	<br><br>
 		Country           : ${student.country}
 	<br><br>
-		Favorite language : ${student.favoriteLanguage}
+		Course Code       : ${student.courseCode}
 	<br><br>
+<!-- 	Favorite language : ${student.favoriteLanguage}
+	<br><br>
+ -->
 	    Operating Systems Used : 
 	<ul>
 	  <c:forEach var="temp" items="${student.operatingSystems}">

@@ -24,10 +24,10 @@ public class CustomerController {
 	@RequestMapping("/showForm")
 	public String showForm(Model theModel) {
 		
-		// create a student object
+		// create a customer object
 		Customer theCustomer = new Customer();
 		
-		// add student object to the model
+		// add customer object to the model
 		theModel.addAttribute("customer", theCustomer);
 		
 		return "customer-form";
