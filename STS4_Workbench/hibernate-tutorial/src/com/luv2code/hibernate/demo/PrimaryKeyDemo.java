@@ -25,6 +25,7 @@ public class PrimaryKeyDemo {
 			Student tempStudent1 = new Student("Carla", "Lupos", "carlalupos@email.com");
 			Student tempStudent2 = new Student("Coco", "Lupos", "cocolupos@email.com");
 			Student tempStudent3 = new Student("Michael William", "Lupos", "michaewilliamlupos@email.com");
+			Student tempStudent4 = new Student("Mikey", "Lupos", "mikeylupos@email.com");
 			
 			// start a transaction
 			session.beginTransaction();
@@ -34,6 +35,7 @@ public class PrimaryKeyDemo {
 			session.save(tempStudent1);
 			session.save(tempStudent2);
 			session.save(tempStudent3);
+			session.save(tempStudent4);
 			
 			// commit the transaction
 			session.getTransaction().commit();
