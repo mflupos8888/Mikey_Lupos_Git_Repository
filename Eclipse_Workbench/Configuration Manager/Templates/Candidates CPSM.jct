@@ -1,0 +1,22 @@
+//JOBNAME  JOB (),'',CLASS=A,MSGCLASS=X,REGION=0M,NOTIFY=&SYSUID
+//*
+//*--------------------------------------------------------------
+//* CCVBMAIN - CANDIDATE LIST
+//*          - data obtained from CSD and CPSM
+//*--------------------------------------------------------------
+//DEPLOY   EXEC  PGM=CCVBMAIN
+//STEPLIB  DD  DISP=SHR,DSN=<sccvaenu>
+//         DD  DISP=SHR,DSN=<sccvauth>
+//CCVPRINT DD  SYSOUT=*
+//CCVREPRT DD  SYSOUT=*            * OUTPUT REPORT RESULTS
+//CCVFLTEX DD  SYSOUT=*            * OUTPUT SAMPLE FILTER STATEMENTS
+//CCVPARMS DD  *
+    CONNECT    IPADDRESS=LOCALHOST,PORT=<PORT>,SSL=<YES OR NO>
+    DEPLOY     PHASE=COLLECT,
+                   REPORTSET=1,
+                   TYPE=CANDIDATES,
+                   CONFIGURATION=<Config-name for a CPSM context>,
+                   SCOPE=<CICS region to be used as scope>,
+               PHASE=REPORT,
+                   TYPE=CANDIDATES,
+                   FILTERDATASET=<file of filter statements>

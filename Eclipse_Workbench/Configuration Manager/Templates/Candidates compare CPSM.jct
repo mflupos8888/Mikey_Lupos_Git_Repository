@@ -1,0 +1,30 @@
+//JOBNAME  JOB (),'',CLASS=A,MSGCLASS=X,REGION=0M,NOTIFY=&SYSUID
+//*
+//*--------------------------------------------------------------
+//* CCVBMAIN - Candidates Compare
+//*          - Data obtained via CICS CM connection
+//*--------------------------------------------------------------
+//DEPLOY   EXEC  PGM=CCVBMAIN
+//STEPLIB  DD  DISP=SHR,DSN=<sccvaenu>
+//         DD  DISP=SHR,DSN=<sccvauth>
+//CCVPRINT DD  SYSOUT=*
+//CCVREPRT DD  SYSOUT=*            * Output report results
+//CCVFLTEX DD  SYSOUT=*            * Output sample filter statements
+//CCVPARMS DD  *
+    CONNECT    IPADDRESS=LOCALHOST,PORT=<port>,SSL=<YES or NO>
+    DEPLOY     PHASE=COLLECT,
+                   REPORTSET=1,
+                   TYPE=CANDIDATES,
+                   CONFIGURATION=<Config-name for a CPSM context>,
+                   SCOPE=<CICS region to be used as scope>,
+               PHASE=COLLECT,
+                   REPORTSET=2,
+                   TYPE=CANDIDATES,
+                   CONFIGURATION=<Config-name for a CSD file>,
+                   GRPLIST=<2nd CSD-List name>,
+                   GRPLIST=<3rd CSD-List name>,
+                   GRPLIST=<4th CSD-List name>,
+                   LOCALSYSID=<CICS sysid evaluated as local>,
+               PHASE=REPORT,
+                   TYPE=CANDIDATESCOMPARE,
+                   FILTERDATASET=<file of filter statements>

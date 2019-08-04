@@ -6,7 +6,6 @@ import org.hibernate.cfg.Configuration;
 
 import com.luv2code.hibernate.entity.Instructor;
 import com.luv2code.hibernate.entity.InstructorDetail;
-import com.luv2code.hibernate.entity.Student;
 
 public class CreateDemo {
 
@@ -23,38 +22,51 @@ public class CreateDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-			/*
-			// create a Instructor and Instructor Detail object
-			System.out.println("Create new instructor object...");
-			Instructor tempInstructor = new Instructor("Mikey", "Lupos", "mikeylupos@email.com");
-			System.out.println("Instructor created : " + tempInstructor.toString());
-
-			System.out.println("Create new instructor detail object...");
-			InstructorDetail tempInstructorDetail = new InstructorDetail("http://www.mikeylupos.com", "Programming");
-			System.out.println("InstructorDetail created : " + tempInstructorDetail.toString());
-			
-			// associate Instructor with Instructor Detail object
-			tempInstructor.setInstructorDetail(tempInstructorDetail);
-			*/
 			
 			// create a Instructor and Instructor Detail object
 			System.out.println("Create new instructor object...");
-			Instructor tempInstructor = new Instructor("Coco", "Lupos", "cocolupos@email.com");
-			System.out.println("Instructor created : " + tempInstructor.toString());
+			Instructor tempInstructor1 = new Instructor("Mikey", "Lupos", "mikeylupos@email.com");
+			System.out.println("Instructor created : " + tempInstructor1.toString());
 
 			System.out.println("Create new instructor detail object...");
-			InstructorDetail tempInstructorDetail = new InstructorDetail("http://www.cocolupos.com", "Watching NDP videos");
-			System.out.println("InstructorDetail created : " + tempInstructorDetail.toString());
+			InstructorDetail tempInstructorDetail1 = new InstructorDetail("http://www.mikeylupos.com", "Programming");
+			System.out.println("InstructorDetail created : " + tempInstructorDetail1.toString());
 			
 			// associate Instructor with Instructor Detail object
-			tempInstructor.setInstructorDetail(tempInstructorDetail);
+			tempInstructor1.setInstructorDetail(tempInstructorDetail1);
 			
 			// start a transaction
 			session.beginTransaction();
 			
 			// save the student object
 			System.out.println("Write the Instructor & Instructor Detail object into MySQL student table...");
-			session.save(tempInstructor);
+			session.save(tempInstructor1);
+			
+			// commit the transaction
+			session.getTransaction().commit();
+			System.out.println("Update committed...");
+			
+			// create a Instructor and Instructor Detail object
+			System.out.println("Create new instructor object...");
+			Instructor tempInstructor2 = new Instructor("Coco", "Lupos", "cocolupos@email.com");
+			System.out.println("Instructor created : " + tempInstructor2.toString());
+
+			System.out.println("Create new instructor detail object...");
+			InstructorDetail tempInstructorDetail2 = new InstructorDetail("http://www.cocolupos.com", "Watching NDP videos");
+			System.out.println("InstructorDetail created : " + tempInstructorDetail2.toString());
+			
+			// associate Instructor with Instructor Detail object
+			tempInstructor2.setInstructorDetail(tempInstructorDetail2);
+			
+			// create a Session
+			session = factory.getCurrentSession();
+
+			// start a transaction
+			session.beginTransaction();
+			
+			// save the student object
+			System.out.println("Write the Instructor & Instructor Detail object into MySQL student table...");
+			session.save(tempInstructor2);
 			
 			// commit the transaction
 			session.getTransaction().commit();

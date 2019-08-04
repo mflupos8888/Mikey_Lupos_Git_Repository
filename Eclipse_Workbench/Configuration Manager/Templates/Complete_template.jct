@@ -1,0 +1,602 @@
+//* --------------------------------------------------------------------
+//* SAMPLE NAME:  CCVX0006
+//* PRODUCT:      CICS CONFIGURATION MANAGER
+//* VERSION:      V2R1M0
+//* AUTHOR:       FUNDI SOFTWARE (C) 2004, 2009.
+//*
+//* COPYRIGHT:    IBM CICS CONFIGURATION MANAGER FOR Z/OS
+//*               LICENSED MATERIALS - PROPERTY OF FUNDI SOFTWARE
+//*               5697-CIC (C) COPYRIGHT FUNDI SOFTWARE 2004, 2009.
+//*                        (C) COPYRIGHT IBM CORP 2004, 2009.
+//*               ALL RIGHTS RESERVED.
+//*               USE, DUPLICATION OR DISCLOSURE RESTRICTED.
+//*
+//* DESCRIPTION:  CCVBMAIN BATCH JCL FOR THE DEPLOYMENT ANALYSIS REPORTS
+//*
+//* NOTES:        THIS MEMBER CONTAINS:
+//*
+//*                  - INSTRUCTIONS
+//*                  - BATCH JCL
+//*                  - EXAMPLES
+//*                  - KEYWORD PARAMETERS - EXPLANATORY NOTES
+//*
+//*M---------------------------------------------------------------
+//* MODIFICATION LOG (MOST RECENT FIRST):
+//*
+//* APAR NO YYYYMMDD ID  COMMENT
+//* ------- -------- --- ------------------------------------------
+//*`HCCK210 20090211 RJA BZ.... BASE VERSION FOR CCM 2.1.0
+//*E---------------------------------------------------------------
+//*
+//*
+//*===================================================================
+//*                       INSTRUCTIONS
+//*===================================================================
+//*
+//* SCCVSAMP(CCVX0006) CONTAINS SAMPLE BATCH JCL TO SUBMIT A
+//* CICS CM DEPLOYMENT ANALYSIS REPORT.  BEFORE SUBMITTING YOUR
+//* REPORT REQUEST, PLEASE FOLLOW THE INSTRUCTIONS BELOW:
+//*
+//*    1. SET UP A DEPLOYMENT ANALYSIS FILTER FILE
+//*       ----------------------------------------
+//*       DEPLOYMENT ANALYSIS REPORT PROCESSING USES A FILTER FILE
+//*       TO REMOVE UNWANTED CONDITIONS FROM THE REPORT OUTPUT.
+//*       FOR EXAMPLE, YOU MAY WISH TO SUPPRESS 'MISSING' ERRORS
+//*       FOR AUTO-INSTALLED PROGRAMS THAT ARE UNDEFINED IN YOUR
+//*       CSD FILE OR YOUR CPSM REPOSITORY.
+//*
+//*       THE FILTER FILE MUST BE CREATED AND DEFINED TO THE CICS
+//*       CM SERVER REGION FOR DEPLOYMENT ANALYSIS REPORTING.
+//*
+//*       A SAMPLE FILTER FILE IS PROVIDED IN MEMBER CCVX0007.  THIS
+//*       SAMPLE CONTAINS CUSTOMIZING NOTES AND INSTRUCTIONS ON HOW
+//*       TO ACTIVATE THE FILE IN YOUR CICS CM SERVER REGION.  SEE
+//*       SAMPLE MEMBER <SCCVSAMP>(CCVX0007).
+//*
+//*       THE DEPLOYMENT ANALYSIS REPORT PROGRAM CAN OPTIONALLY
+//*       PREPARE FILTERING STATEMENTS FOR THE EXCEPTION CONDITIONS
+//*       FOUND DURING REPORT ANALYSIS.  REFER TO THE CUSTOMIZATION
+//*       TOKEN <CCVFLTEX> DESCRIBED BELOW TO ACTIVATE THE COLLECTION
+//*       OF THESE FILTERING STATEMENTS.  YOU MAY WISH TO PERFORM YOUR
+//*       INITIAL ANALYSIS WITHOUT ANY FILTERING STATEMENTS, AND THEN
+//*       ADD FILTERS MATCHING THOSE COLLECTED VIA <CCVFLTEX> IF
+//*       THESE ARE DEEMED ACCEPTABLE.
+//*
+//*    2. COPY THE SAMPLE JCL INTO A DATA SET FOR JOB SUBMISSION
+//*       ------------------------------------------------------
+//*       COPY THIS SCCVSAMP MEMBER CCVX0006 INTO ANOTHER DATA SET
+//*       FOR CUSTOMIZING AND JOB SUBMISSION.
+//*
+//*    3. CUSTOMIZE AND SUBMIT THE BATCH JCL
+//*       ----------------------------------
+//*       3.1  ADJUST THE JOB CARD PARAMETERS AS REQUIRED.
+//*       3.2  REPLACE THE EMBEDDED <TOKENS> WITH YOUR VALUES
+//*       3.3  SUBMIT THE BATCH JCL
+//*
+//*       THE EMBEDDED <TOKENS> HAVE THE FOLLOWING MEANINGS:
+//*
+//*         <CCVFLTEX>
+//*            THIS IS AN OPTIONAL OUTPUT DATA SET TO BE UPDATED WITH
+//*            FILTER FILE CONTROL STATEMENTS.  IF THE CCVFLTEX FILE
+//*            IS REQUESTED, THE REPORT EXCEPTIONS ARE ANALYSED AND
+//*            FILTER FILE STATEMENTS ARE PREPARED TO SUPPRESS THE
+//*            REPORT RESULTS.  YOU MAY THEN REVIEW THESE FILTERING
+//*            STATEMENTS AND INCLUDE THOSE APPROPRIATE IN FUTURE
+//*            DEPLOY REPORT EXECUTIONS.
+//*
+//*               NOTE:  THE FILTER STATEMENTS OUTPUT TO DDNAME
+//*                      CCVFLTEX DO NOT INCLUDE THOSE USED AS INPUT
+//*                      FOR THE DEPLOYMENT ANALYSIS REPORT VIA THE
+//*                      DEPLOY STATEMENT FILTERDATASET DATA SET.
+//*
+//*                      YOU WILL NEED TO ADD THE CCVFLTEX FILTER
+//*                      STATEMENTS (FOR THOSE APPROPRIATE) TO YOUR
+//*                      EXISTING FILTER STATEMENTS.
+//*
+//*            THE OUTPUT FILTER STATEMENTS ARE WRITTEN TO DDNAME
+//*            CCVFLTEX.  YOU MAY CHOOSE TO ASSIGN THIS DD STATEMENT
+//*            TO:
+//*
+//*              - A JES SYSOUT OUTPUT QUEUE
+//*              - A DATA SET
+//*              - DUMMY, WHICH WILL SUPPRESS THE FILTER OUTPUT.
+//*
+//*         <PORT>
+//*            THIS IS THE TCP/IP PORT NUMBER IN THE CICS REGION
+//*            ON WHICH CICS CM LISTENS FOR INCOMING SERVICE REQUESTS.
+//*
+//*         <REPORTFILE>
+//*            THIS IS AN OPTIONAL OUTPUT DATA SET TO BE UPDATED WITH
+//*            REPORT RESULTS DATA.  THE OUTPUT REPORT IS WRITTEN TO
+//*            DDNAME CCVREPRT.  YOU MAY CHOOSE TO ASSIGN THIS DD
+//*            STATEMENT TO:
+//*
+//*              - A JES SYSOUT OUTPUT QUEUE
+//*              - A DATA SET
+//*              - DUMMY, WHICH WILL SUPPRESS THE REPORT OUTPUT.
+//*
+//*         <SCCVAENU>
+//*            THIS IS THE CICS CM LANGUAGE-DEPENDENT SOFTWARE LIBRARY.
+//*            THE DATA SET TO BE USED DEPENDS UPON THE LANGUAGE
+//*            COMPONENT INSTALLED:
+//*
+//*               - FOR FMID JCCK21E FOR ENGLISH LANGUAGE COMPONENTS,
+//*                 SPECIFY THE SCCVAENU DATA SET.
+//*
+//*               - FOR FMID JCCK21K FOR JAPANESE (KANJI) LANGUAGE
+//*                 COMPONENTS, SPECIFY THE SCCVAJPN DATA SET.
+//*
+//*            THIS MUST BE AN APF AUTHORIZED LIBRARY.
+//*
+//*         <SCCVAUTH>
+//*            THIS IS A CICS CM SOFTWARE LIBRARY, WITH A LOW-LEVEL
+//*            QUALIFIER OF SCCVAUTH.  THIS MUST BE AN APF AUTHORIZED
+//*            LIBRARY.
+//*
+//*         SSL=<YES OR NO>
+//*            THIS INDICATES IF THE TCP/IP PORT IS SSL ENABLED.
+//*            SPECIFY YES FOR SSL ENABLED, OR NO IF SSL IS NOT
+//*            ENABLED.
+//*
+//*
+//*
+//*===================================================================
+//*                          BATCH JCL
+//*===================================================================
+//*
+//JOBNAME  JOB (),'',CLASS=A,MSGCLASS=X,REGION=0M,NOTIFY=&SYSUID
+//*
+//*--------------------------------------------------------------
+//* CCVBMAIN - DEPLOYMENT ANALYSIS REPORTING
+//*--------------------------------------------------------------
+//DEPLOY   EXEC  PGM=CCVBMAIN
+//STEPLIB  DD  DISP=SHR,DSN=<SCCVAENU>
+//         DD  DISP=SHR,DSN=<SCCVAUTH>
+//CCVPRINT DD  SYSOUT=*
+//*CCVTRACE DD  SYSOUT=*           * OPTIONAL DIAGNOSTIC TRACING
+//*
+//CCVREPRT DD  SYSOUT=*            * OUTPUT REPORT RESULTS
+//*CCVREPRT DD  DSN=<REPORTFILE>,
+//*             UNIT=SYSDA,SPACE=(TRK,(150,150),RLSE),
+//*             LRECL=133,RECFM=FBA,BLKSIZE=23940,
+//*             DISP=(,CATLG,CATLG)
+//*
+//CCVFLTEX DD  SYSOUT=*            * OUTPUT SAMPLE FILTER STATEMENTS
+//*CCVFLTEX DD  DSN=<CCVFLTEX>,
+//*             UNIT=SYSDA,SPACE=(TRK,(10,100),RLSE),
+//*             LRECL=80,RECFM=FB,BLKSIZE=3200,DSORG=PS,
+//*             DISP=(,CATLG,CATLG)
+//*
+//CCVPARMS DD  *
+    CONNECT    IPADDRESS=LOCALHOST,PORT=<PORT>,SSL=<YES OR NO>
+    DEPLOY     <KEYWORD PARAMETERS AS PER THE EXAMPLES THAT FOLLOW>
+/*
+//
+//*
+//*
+//*===================================================================
+//*                         EXAMPLES
+//*===================================================================
+//*
+//* THE FOLLOWING EXAMPLES ILLUSTRATE THE DEPLOY CONTROL CARDS
+//* REQUIRED FOR REPORT REQUESTS.
+//*
+//*  EXAMPLE    REPORT TYPE      RUNTIME DATA      CANDIDATES DATA
+//*  ------- -----------------   ------------      ----------------
+//*    1.    COLDSTARTCOMPARE    VIA CPSM          VIA CSD AND CPSM
+//*    2.    COLDSTARTCOMPARE    VIA CICS CM       VIA CSD
+//*    3.    CANDIDATES          N/A               VIA CSD
+//*    4.    CANDIDATES          N/A               VIA CPSM
+//*    5.    CANDIDATES          N/A               VIA CSD AND CPSM
+//*    6.    CANDIDATESCOMPARE   N/A               VIA CSD AND CPSM
+//*    7.    RUNTIME             VIA CPSM          N/A
+//*    8.    RUNTIME             VIA CSD           N/A
+//*    9.    RUNTIMECOMPARE      VIA CSD AND CPSM  N/A
+//*
+//* THE SECTION KEYWORD PARAMETERS - EXPLANATORY NOTES AT THE END OF
+//* THIS SAMPLE PROVIDES INFORMATION REGARDING THE MEANING OF THE
+//* KEYWORD PARAMETERS.
+//*
+//*
+//*--------------------------------------------------------------------
+//* EXAMPLE 1: REPORTTYPE: COLDSTARTCOMPARE
+//*            RUNTIME:    DATA OBTAINED VIA CPSM
+//*            CANDIDATES: DATA OBTAINED FROM BOTH CSD AND CPSM
+//*--------------------------------------------------------------------
+//*
+//* DEPLOY     PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=RUNTIME,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CONTEXT>,
+//*                SCOPE=<CICS REGION'S TARGET SCOPE>,
+//*            PHASE=COLLECT,
+//*                REPORTSET=2,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CONTEXT>,
+//*                SCOPE=<CICS REGION'S TARGET SCOPE>,
+//*            PHASE=COLLECT,
+//*                REPORTSET=2,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CSD FILE>,
+//*                GRPLIST=<1ST CSD-LIST NAME>,
+//*                GRPLIST=<2ND CSD-LIST NAME>,
+//*                GRPLIST=<3RD CSD-LIST NAME>,
+//*                GRPLIST=<4TH CSD-LIST NAME>,
+//*                LOCALSYSID=<CICS SYSID EVALUATED AS LOCAL>,
+//*            PHASE=REPORT,
+//*                TYPE=COLDSTARTCOMPARE,
+//*                FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*
+//*
+//*--------------------------------------------------------------------
+//* EXAMPLE 2: REPORTTYPE: COLDSTARTCOMPARE
+//*            RUNTIME:    DATA OBTAINED VIA CICS CM CONNECTION
+//*            CANDIDATES: DATA OBTAINED FROM CSD FILE ONLY
+//*--------------------------------------------------------------------
+//*
+//* DEPLOY     PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=RUNTIME,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CSD FILE>,
+//*                CONNECTION=<CONNECTION USED BY THE CICS CM SERVER>,
+//*            PHASE=COLLECT,
+//*                REPORTSET=2,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CSD FILE>,
+//*                GRPLIST=<1ST CSD-LIST NAME>,
+//*                GRPLIST=<2ND CSD-LIST NAME>,
+//*                GRPLIST=<3RD CSD-LIST NAME>,
+//*                GRPLIST=<4TH CSD-LIST NAME>,
+//*                LOCALSYSID=<CICS SYSID EVALUATED AS LOCAL>,
+//*            PHASE=REPORT,
+//*                TYPE=COLDSTARTCOMPARE,
+//*                FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*
+//*
+//*--------------------------------------------------------------------
+//* EXAMPLE 3: REPORTTYPE: CANDIDATES
+//*            RUNTIME:    NOT APPLICABLE
+//*            CANDIDATES: DATA OBTAINED FROM CSD FILE ONLY
+//*--------------------------------------------------------------------
+//*
+//* DEPLOY     PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CSD FILE>,
+//*                GRPLIST=<1ST CSD-LIST NAME>,
+//*                GRPLIST=<2ND CSD-LIST NAME>,
+//*                GRPLIST=<3RD CSD-LIST NAME>,
+//*                GRPLIST=<4TH CSD-LIST NAME>,
+//*                LOCALSYSID=<CICS SYSID EVALUATED AS LOCAL>,
+//*            PHASE=REPORT,
+//*                TYPE=CANDIDATES,
+//*                FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*
+//*
+//*--------------------------------------------------------------------
+//* EXAMPLE 4: REPORTTYPE: CANDIDATES
+//*            RUNTIME:    NOT APPLICABLE
+//*            CANDIDATES: DATA OBTAINED FROM CPSM ONLY
+//*--------------------------------------------------------------------
+//*
+//* DEPLOY     PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CONTEXT>,
+//*                SCOPE=<CICS REGION'S TARGET SCOPE>,
+//*            PHASE=REPORT,
+//*                TYPE=CANDIDATES,
+//*                FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*
+//*
+//*--------------------------------------------------------------------
+//* EXAMPLE 5: REPORTTYPE: CANDIDATES
+//*            RUNTIME:    NOT APPLICABLE
+//*            CANDIDATES: DATA OBTAINED FROM BOTH CSD AND CPSM
+//*--------------------------------------------------------------------
+//*
+//* DEPLOY     PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CONTEXT>,
+//*                SCOPE=<CICS REGION'S TARGET SCOPE>,
+//*            PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CSD FILE>,
+//*                GRPLIST=<1ST CSD-LIST NAME>,
+//*                GRPLIST=<2ND CSD-LIST NAME>,
+//*                GRPLIST=<3RD CSD-LIST NAME>,
+//*                GRPLIST=<4TH CSD-LIST NAME>,
+//*                LOCALSYSID=<CICS SYSID EVALUATED AS LOCAL>,
+//*            PHASE=REPORT,
+//*                TYPE=CANDIDATES,
+//*                FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*
+//*
+//*--------------------------------------------------------------------
+//* EXAMPLE 6: REPORTTYPE: CANDIDATESCOMPARE
+//*            RUNTIME:    NOT APPLICABLE
+//*            CANDIDATES: DATA OBTAINED FROM BOTH CSD AND CPSM
+//*--------------------------------------------------------------------
+//*
+//* DEPLOY     PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CONTEXT>,
+//*                SCOPE=<CICS REGION'S TARGET SCOPE>,
+//*            PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CSD FILE>,
+//*                GRPLIST=<1ST CSD-LIST NAME>,
+//*                GRPLIST=<2ND CSD-LIST NAME>,
+//*                GRPLIST=<3RD CSD-LIST NAME>,
+//*                GRPLIST=<4TH CSD-LIST NAME>,
+//*                LOCALSYSID=<CICS SYSID EVALUATED AS LOCAL>,
+//*            PHASE=COLLECT,
+//*                REPORTSET=2,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CONTEXT>,
+//*                SCOPE=<CICS REGION'S TARGET SCOPE>,
+//*            PHASE=COLLECT,
+//*                REPORTSET=2,
+//*                TYPE=CANDIDATES,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CSD FILE>,
+//*                GRPLIST=<1ST CSD-LIST NAME>,
+//*                GRPLIST=<2ND CSD-LIST NAME>,
+//*                GRPLIST=<3RD CSD-LIST NAME>,
+//*                GRPLIST=<4TH CSD-LIST NAME>,
+//*                LOCALSYSID=<CICS SYSID EVALUATED AS LOCAL>,
+//*            PHASE=REPORT,
+//*                TYPE=CANDIDATESCOMPARE,
+//*                FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*
+//*
+//*--------------------------------------------------------------------
+//* EXAMPLE 7: REPORTTYPE: RUNTIME
+//*            RUNTIME:    DATA OBTAINED VIA CPSM
+//*            CANDIDATES: NOT APPLICABLE
+//*--------------------------------------------------------------------
+//*
+//* DEPLOY     PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=RUNTIME,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CONTEXT>,
+//*                SCOPE=<CICS REGION'S TARGET SCOPE>,
+//*            PHASE=REPORT,
+//*                TYPE=RUNTIME,
+//*                FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*
+//*
+//*--------------------------------------------------------------------
+//* EXAMPLE 8: REPORTTYPE: RUNTIME
+//*            RUNTIME:    DATA OBTAINED VIA CICS CM CONNECTION
+//*            CANDIDATES: NOT APPLICABLE
+//*--------------------------------------------------------------------
+//*
+//* DEPLOY     PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=RUNTIME,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CSD FILE>,
+//*                CONNECTION=<CONNECTION USED BY THE CICS CM SERVER>,
+//*            PHASE=REPORT,
+//*                TYPE=RUNTIME,
+//*                FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*
+//*
+//*--------------------------------------------------------------------
+//* EXAMPLE 9: REPORTTYPE: RUNTIMECOMPARE
+//*            RUNTIME:    DATA OBTAINED VIA CICS CM AND CPSM
+//*            CANDIDATES: NOT APPLICABLE
+//*--------------------------------------------------------------------
+//*
+//* DEPLOY     PHASE=COLLECT,
+//*                REPORTSET=1,
+//*                TYPE=RUNTIME,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CSD FILE>,
+//*                CONNECTION=<CONNECTION USED BY THE CICS CM SERVER>,
+//*            PHASE=COLLECT,
+//*                REPORTSET=2,
+//*                TYPE=RUNTIME,
+//*                CONFIGURATION=<CONFIG-NAME FOR A CONTEXT>,
+//*                SCOPE=<CICS REGION'S TARGET SCOPE>,
+//*            PHASE=REPORT,
+//*                TYPE=RUNTIMECOMPARE,
+//*                FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*
+//*
+//*
+//*===================================================================
+//*            KEYWORD PARAMETERS - EXPLANATORY NOTES
+//*===================================================================
+//*
+//* THIS SECTION DESCRIBES THE KEYWORD PARAMETERS FOR THE DEPLOY
+//* STATEMENT.
+//*
+//*    PHASE=COLLECT
+//*    -------------
+//*       THESE CARDS SPECIFY HOW REPORT DATA IS TO BE COLLECTED.
+//*       THIS COLLECTED DATA WILL BE USED TO PREPARE THE REPORT.
+//*       ALL PHASE=COLLECT STATEMENTS MUST PRECEDE PHASE=REPORT
+//*       STATEMENTS.
+//*
+//*       THE PHASE=COLLECT SUPPORTS THE FOLLOWING KEYWORDS:
+//*
+//*         CONFIGURATION=<CICS CONFIGURATION NAME>
+//*            THIS KEYWORD SPECIFIES THE NAME OF A CICS CONFIGURATION
+//*            DEFINED TO CICS CM.  THE CICS CONFIGURATION MAY
+//*            REFERENCE A:
+//*
+//*               1. CSD FILE
+//*                  --------
+//*                  WHEN TYPE=CANDIDATES, THE DATA IS DRAWN FROM THE
+//*                  RELATED CSD DATA SET.
+//*
+//*                  WHEN TYPE=RUNTIME, THE CICS REGION RESOURCE DATA IS
+//*                  OBTAINED BY CICS CM VIA A CONNECTION.  CICS CM
+//*                  VERIFIES THAT THE CICS REGION'S DFHCSD FILE DATA
+//*                  SET NAME MATCHES THAT SPECIFIED IN THE CICS
+//*                  CONFIGURATION.
+//*
+//*               2. CPSM CONTEXT
+//*                  ------------
+//*                  WHEN TYPE=CANDIDATES, THE DATA IS DRAWN
+//*                  FROM THE RELATED CPSM CONTEXT.
+//*
+//*                  WHEN TYPE=RUNTIME, THE CICS REGION RESOURCE DATA
+//*                  IS OBTAINED BY CPSM VIA A TARGETSCOPE FOR THE
+//*                  CPSM CONTEXT THAT MATCHES THAT SPECIFIED IN THE
+//*                  CICS CONFIGURATION.
+//*
+//*         CONNECTION=<CONNECTION NAME IN THE CICS CM SERVER>
+//*            THIS KEYWORD SPECIFIES THE CONNECTION NAME TO BE USED BY
+//*            THE CICS CM SERVER TO ROUTE TO A REMOTE CICS REGION AND
+//*            OBTAIN CICS REGION RESOURCES DATA.
+//*
+//*            THE CONNECTION PARAMETER IS ONLY VALID FOR CSD-FILE
+//*            CONFIGURATIONS, AND WHEN TYPE=RUNTIME.
+//*
+//*         GRPLIST=<A CSD-LIST NAME>
+//*            THIS KEYWORD SPECIFIES THE NAME OF A CSD LIST,
+//*            OR A GENERIC CSD LIST VALUE, FOR EXAMPLE DFH*.
+//*            THE GRPLIST PARAMETER IS ONLY VALID FOR CSD-FILE
+//*            CONFIGURATIONS, AND WHEN TYPE=CANDIDATES.
+//*
+//*            UP TO FOUR GRPLIST PARAMETERS MAY BE SPECIFIED.
+//*            THE ORDER IS SIGNIFICANT, AS THE CSD LIST
+//*            IN THE FIRST GRPLIST TAKES PRECEDENCE OVER THAT
+//*            IN THE SECOND GRPLIST, AND SO ON.
+//*
+//*         LOCALSYSID=<CICS SYSID EVALUATED AS LOCAL>
+//*            THIS KEYWORD SPECIFIES A 4-CHARACTER CICS SYSTEM ID
+//*            THAT WILL BE USED TO ASSESS CANDIDATE RESOURCE
+//*            DEFINITIONS AS EITHER LOCAL OR REMOTE.
+//*
+//*            THE LOCALSYSID PARAMETER IS ONLY VALID FOR CSD-FILE
+//*            CONFIGURATIONS, AND WHEN TYPE=CANDIDATES.
+//*
+//*            ANY CICS RESOURCES DEFINED WITH REMOTE SYSTEM NAMES
+//*            MATCHING THE LOCALSYSID WILL BE INTERPRETED AS LOCAL
+//*            RESOURCES.  CICS RESOURCES DEFINED WITH REMOTE SYSTEM
+//*            NAMES THAT DO NOT MATCH THE LOCALSYSID WILL BE
+//*            INTERPRETED AS REMOTE RESOURCES.
+//*
+//*            IF THE LOCALSYSID IS NOT SUPPLIED, ALL RESOURCES
+//*            DEFINED WITH REMOTE SYSTEM NAMES WILL BE INTERPRETED
+//*            AS REMOTE RESOURCES.
+//*
+//*         REPORTSET=<1 OR 2>
+//*            THIS PARAMETER LOGICALLY GROUPS COLLECTED DATA INTO A
+//*            SINGLE SET FOR REPORT PROCESSING.  THE PARAMETER
+//*            ELIMINATES AMBIGUITY WHEN INTERPRETING HOW THE MULTIPLE
+//*            COLLECTION INPUTS SHOULD BE PROCESSED.
+//*
+//*
+//*            FOR EXAMPLE, A TYPE=CANDIDATESCOMPARE REPORT MAY COMPARE:
+//*
+//*               (1) RESOURCE DEFINITION CANDIDATES COLLECTED FROM A CSD
+//*                   FILE; WITH
+//*               (2) A SET OF DEFINITION CANDIDATES COLLECTED FROM A
+//*                   CSD FILE MERGED WITH CANDIDATES COLLECTED VIA
+//*                   CPSM.
+//*
+//*            IN THIS EXAMPLE, THREE PHASE=COLLECT PARAMETERS ARE
+//*            REQUIRED:
+//*
+//*               PHASE=COLLECT,               * THE 1ST CSD FILE
+//*                  TYPE=CANDIDATES,          * BELONGS TO
+//*                  REPORTSET=1,              * REPORTSET=1
+//*                  CONFIGURATION=<CSD FILE>
+//*
+//*               PHASE=COLLECT,               * THE 2ND CSD FILE
+//*                  TYPE=CANDIDATES,          * TO BE COMPARED IS IN
+//*                  REPORTSET=2,              * REPORTSET=2
+//*                  CONFIGURATION=<CSD FILE>
+//*
+//*               PHASE=COLLECT,               * THE CPSM DEFINITIONS
+//*                  TYPE=CANDIDATES,          * ARE TO BE MERGED INTO
+//*                  REPORTSET=2,              * REPORTSET=2
+//*                  CONFIGURATION=<CONTEXT>
+//*
+//*         SCOPE=<CPSM TARGETSCOPE>
+//*            THIS KEYWORD SPECIFIES THE CPSM TARGETSCOPE FOR
+//*            PROCESSING.  THE TARGETSCOPE IDENTIFIES A CICS
+//*            SYSTEM VIA THE CPSM CSYSDEF DEFINITION NAME.
+//*
+//*            WHEN TYPE=CANDIDATES, CICS RESOURCE DEFINITIONS FOR THE
+//*            SPECIFIED CICS SYSTEM (TARGETSCOPE) ARE OBTAINED VIA
+//*            CPSM.
+//*
+//*            WHEN TYPE=RUNTIME, INSTALLED CICS REGION RESOURCE DATA
+//*            FOR THE SPECIFIED CICS SYSTEM (TARGETSCOPE) ARE
+//*            OBTAINED VIA CPSM.
+//*
+//*            SCOPE IS REQUIRED WHEN THE CONFIGURATION
+//*            SPECIFIES A CSPM CONTEXT, AND SHOULD BE OMITTED
+//*            IF THE CONFIGURATION RELATES TO A CSD FILE.
+//*
+//*         TYPE=<RUNTIME OR CANDIDATES>
+//*            THIS KEYWORD SPECIFIES IF THE COLLECTED DATA REFLECTS:
+//*               - INSTALLED DEFINITIONS FOR A CICS REGION, OR
+//*               - CICS RESOURCE DEFINITION CANDIDATES DRAWN FROM
+//*                 A CSD FILE OR THE CPSM DEFINITION REPOSITORY.
+//*
+//*
+//*
+//*
+//*    PHASE=REPORT
+//*    ------------
+//*       THESE CARDS SPECIFY THE TYPE OF REPORT TO BE PRODUCED.
+//*       THE TYPE OF REPORT MUST BE CONSISTENT WITH THE TYPES OF
+//*       COLLECTED DATA VIA THE PHASE=COLLECT STATEMENTS.
+//*
+//*       THE PHASE=REPORT SUPPORTS THE FOLLOWING KEYWORDS:
+//*
+//*          TYPE=CANDIDATES
+//*             THIS REPORT ASSESSES A SET OF CICS RESOURCE DEFINITION
+//*             CANDIDATES.
+//*
+//*          TYPE=CANDIDATESCOMPARE
+//*             THIS REPORT ASSESSES THE DIFFERENCES BETWEEN TWO SETS
+//*             OF CICS RESOURCE DEFINITION CANDIDATES.
+//*
+//*          TYPE=COLDSTARTCOMPARE
+//*             THIS REPORT ASSESSES THE IMPACT OF COLD STARTING
+//*             A CICS REGION WITH A NEW SET OF RESOURCE DEFINITION
+//*             CANDIDATES.
+//*
+//*          TYPE=RUNTIME
+//*             THIS REPORT LISTS THE INSTALLED DEFINITIONS FOR A CICS
+//*             REGION.
+//*
+//*          TYPE=RUNTIMECOMPARE
+//*             THIS REPORT ASSESSES THE DIFFERENCES BETWEEN THE
+//*             INSTALLED DEFINITIONS FOR TWO CICS REGIONS.
+//*
+//*          FILTERDATASET=<FILE OF FILTER STATEMENTS>
+//*             THIS KEYWORD SPECIFIES THE NAME OF A DATA SET
+//*             CONTAINING FILTERING STATEMENTS TO REMOVE UNWANTED
+//*             REPORT OUTPUT.
+//*
+//*             FOR EXAMPLE, YOU MAY WISH TO SUPPRESS 'MISSING' ERRORS
+//*             FOR AUTO-INSTALLED PROGRAMS THAT ARE UNDEFINED IN YOUR
+//*             CSD FILE OR YOUR CPSM REPOSITORY.
+//*
+//*             A SAMPLE FILTER FILE ALONG WITH EXPLANATORY NOTES AND
+//*             EXAMPLES IS CONTAINED IN SCCVSAMP MEMBER CCVX0007.
+//*
+//*             THE FILTERDATASET PARAMETER IS OPTIONAL.  IF OMITTED,
+//*             THEN NO REPORT FILTERING OCCURS.  IF SPECIFIED, THE
+//*             FILTER DATA SET MUST BE DEFINED AS:
+//*
+//*                 LRECL=80,RECFM=FB,DSORG=PS
+//*
+//*             ... AND CONFORM TO THE LAYOUT DESCRIBED IN SCCVSAMP
+//*             MEMBER CCVX0007.  THE FILTER FILE CANNOT BE DEFINED
+//*             AS A PDS OR PDS/E LIBRARY MEMBER.
+//*
+//*
+//*===================================================================
+//*                 E N D   O F   S A M P L E
+//*===================================================================

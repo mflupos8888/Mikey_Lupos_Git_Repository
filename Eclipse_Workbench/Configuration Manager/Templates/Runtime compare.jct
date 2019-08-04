@@ -1,0 +1,27 @@
+//JOBNAME  JOB (),'',CLASS=A,MSGCLASS=X,REGION=0M,NOTIFY=&SYSUID
+//*
+//*--------------------------------------------------------------
+//* CCVBMAIN - Runtime Resources Compare
+//*          - data obtained via CICS CM connection 
+//*--------------------------------------------------------------
+//DEPLOY   EXEC  PGM=CCVBMAIN
+//STEPLIB  DD  DISP=SHR,DSN=<sccvaenu>
+//         DD  DISP=SHR,DSN=<sccvauth>
+//CCVPRINT DD  SYSOUT=*
+//CCVREPRT DD  SYSOUT=*            * Output report results
+//CCVFLTEX DD  SYSOUT=*            * Output sample filter statements
+//CCVPARMS DD  *
+    CONNECT    IPADDRESS=LOCALHOST,PORT=<port>,SSL=<YES or NO>
+    DEPLOY     PHASE=COLLECT,
+                   REPORTSET=1,
+                   TYPE=RUNTIME,
+                   CONFIGURATION=<config-name for a CSD file>,
+                   CONNECTION=<Connection used by the CICS CM server>,
+               PHASE=COLLECT,
+                   REPORTSET=2,
+                   TYPE=RUNTIME,
+                   CONFIGURATION=<config-name for a CSD file>,
+                   CONNECTION=<Connection used by the CICS CM server>,
+               PHASE=REPORT,
+                   TYPE=RUNTIMECOMPARE,
+                   FILTERDATASET=<file of filter statements>

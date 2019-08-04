@@ -12,4 +12,24 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="com.ibm.cics.pa.ui.wizards.SampleCSV"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.ibm.cics.zos.ui.category"/>
+			<item value="com.ibm.zosconnect.ui.newWizard.category"/>
+			<item value="com.ibm.teamz.zcomponent.ui.views"/>
+			<item value="org.eclipse.ui.Examples"/>
+		</list>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="193"/>
+		<item key="DIALOG_Y_ORIGIN" value="110"/>
+	</section>
+	<section name="EditorSelectionDialog">
+		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value="test"/>
+		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
+		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="editor.id.cobol"/>
+	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>

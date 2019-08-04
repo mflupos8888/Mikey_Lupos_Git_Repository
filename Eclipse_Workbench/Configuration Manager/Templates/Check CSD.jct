@@ -1,0 +1,26 @@
+//JOBNAME  JOB (),'',CLASS=A,MSGCLASS=X,REGION=0M,NOTIFY=&SYSUID
+//*
+//*--------------------------------------------------------------
+//* CCVBMAIN - DEPLOYMENT ANALYSIS REPORTING
+//*          - DATA OBTAINED FROM CSD FILE ONLY
+//*--------------------------------------------------------------
+//DEPLOY   EXEC  PGM=CCVBMAIN
+//STEPLIB  DD  DISP=SHR,DSN=<SCCVAENU>
+//         DD  DISP=SHR,DSN=<SCCVAUTH>
+//CCVPRINT DD  SYSOUT=*
+//CCVREPRT DD  SYSOUT=*            * OUTPUT REPORT RESULTS
+//CCVFLTEX DD  SYSOUT=*            * OUTPUT SAMPLE FILTER STATEMENTS
+//CCVPARMS DD  *
+    CONNECT    IPADDRESS=LOCALHOST,PORT=<PORT>,SSL=<YES OR NO>
+    DEPLOY     PHASE=COLLECT,
+                   REPORTSET=1,
+                   TYPE=CANDIDATES,
+                   CONFIGURATION=<Config-name for a CSD file>,
+                   GRPLIST=<1st CSD-List name>,
+                   GRPLIST=<2nd CSD-List name>,
+                   GRPLIST=<3rd CSD-List name>,
+                   GRPLIST=<4th CSD-List name>,
+                   LOCALSYSID=<CICS sysid evaluated as local>,
+               PHASE=REPORT,
+                   TYPE=CHECK,
+                   FILTERDATASET=<file of filter statements>
