@@ -8,7 +8,7 @@ import com.luv2code.hibernate.entity.Course;
 import com.luv2code.hibernate.entity.Instructor;
 import com.luv2code.hibernate.entity.InstructorDetail;
 
-public class EagerLazyDemo {
+public class FetchJoinDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

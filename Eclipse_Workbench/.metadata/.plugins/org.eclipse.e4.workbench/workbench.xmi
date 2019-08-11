@@ -93,8 +93,10 @@
           <tags>persp.actionSet:com.ibm.team.jazzhub.client.actionSet</tags>
           <tags>persp.actionSet:com.ibm.teamz.supa.finder.ui.quicksearch</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_70WXYaneEemWQfSUKdD5Vw" selectedElement="_70WXZ6neEemWQfSUKdD5Vw" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_70WXYqneEemWQfSUKdD5Vw" elementId="topLeft" containerData="2500" selectedElement="_70WXY6neEemWQfSUKdD5Vw">
+            <children xsi:type="basic:PartStack" xmi:id="_70WXYqneEemWQfSUKdD5Vw" elementId="topLeft" visible="false" containerData="2500" selectedElement="_70WXY6neEemWQfSUKdD5Vw">
               <tags>noFocus</tags>
+              <tags>Minimized</tags>
+              <tags>MinimizedByZoom</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_70WXY6neEemWQfSUKdD5Vw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_7od3gKneEemWQfSUKdD5Vw" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -114,8 +116,12 @@
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_70WXZ6neEemWQfSUKdD5Vw" containerData="7500" selectedElement="_70WXbqneEemWQfSUKdD5Vw">
               <children xsi:type="basic:PartSashContainer" xmi:id="_70WXaKneEemWQfSUKdD5Vw" containerData="7000" selectedElement="_70WXaqneEemWQfSUKdD5Vw" horizontal="true">
-                <children xsi:type="advanced:Placeholder" xmi:id="_70WXaaneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_7n0-UKneEemWQfSUKdD5Vw"/>
-                <children xsi:type="basic:PartStack" xmi:id="_70WXaqneEemWQfSUKdD5Vw" elementId="topRight" containerData="3000" selectedElement="_70WXa6neEemWQfSUKdD5Vw">
+                <children xsi:type="advanced:Placeholder" xmi:id="_70WXaaneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_7n0-UKneEemWQfSUKdD5Vw">
+                  <tags>MinimizedByZoom</tags>
+                </children>
+                <children xsi:type="basic:PartStack" xmi:id="_70WXaqneEemWQfSUKdD5Vw" elementId="topRight" visible="false" containerData="3000" selectedElement="_70WXa6neEemWQfSUKdD5Vw">
+                  <tags>Minimized</tags>
+                  <tags>MinimizedByZoom</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_70WXa6neEemWQfSUKdD5Vw" elementId="org.eclipse.ui.views.ContentOutline" ref="_70ObkKneEemWQfSUKdD5Vw" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -130,9 +136,10 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_70WXbqneEemWQfSUKdD5Vw" elementId="bottomRight" containerData="3000" selectedElement="_Vk2xELmCEemquPvNlhyfSw">
+              <children xsi:type="basic:PartStack" xmi:id="_70WXbqneEemWQfSUKdD5Vw" elementId="bottomRight" containerData="3000" selectedElement="_70WXeKneEemWQfSUKdD5Vw">
                 <tags>active</tags>
                 <tags>General</tags>
+                <tags>Maximized</tags>
                 <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_70WXb6neEemWQfSUKdD5Vw" elementId="org.eclipse.ui.views.AllMarkersView" toBeRendered="false" ref="_70COUKneEemWQfSUKdD5Vw" closeable="true">
                   <tags>View</tags>
@@ -467,6 +474,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_K21mALJtEemo-KakSn1ovw" elementId="org.eclipse.ui.views.ProgressView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -501,7 +510,10 @@
       <menus xsi:type="menu:PopupMenu" xmi:id="_TdwhsLmCEemquPvNlhyfSw" elementId="org.eclipse.ui.views.ProgressView">
         <tags>menuContribution:popup</tags>
       </menus>
-      <toolbar xmi:id="_K21mAbJtEemo-KakSn1ovw" elementId="org.eclipse.ui.views.ProgressView" visible="false"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_I4QgsLtFEem_TsBF1CxN_w" elementId="org.eclipse.ui.views.ProgressView">
+        <tags>menuContribution:popup</tags>
+      </menus>
+      <toolbar xmi:id="_K21mAbJtEemo-KakSn1ovw" elementId="org.eclipse.ui.views.ProgressView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_70N0gKneEemWQfSUKdD5Vw" elementId="org.eclipse.search.ui.views.SearchView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Search" iconURI="platform:/plugin/org.eclipse.search/icons/full/eview16/searchres.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.search2.internal.ui.SearchView"/>
@@ -569,13 +581,11 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view activate=&quot;true&quot; allSessions=&quot;true&quot; column2=&quot;632&quot; column3=&quot;150&quot; column4=&quot;486&quot; error=&quot;true&quot; groupBy=&quot;0&quot; info=&quot;true&quot; limit=&quot;50&quot; maxLogTailSize=&quot;1&quot; ok=&quot;true&quot; orderType=&quot;2&quot; orderValue=&quot;-1&quot; show_filter_text=&quot;true&quot; useLimit=&quot;true&quot; warning=&quot;true&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_wLscMLM0Eemd29yBMrgCBg" elementId="org.eclipse.pde.runtime.LogView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_wLscMbM0Eemd29yBMrgCBg" elementId="org.eclipse.pde.runtime.LogView"/>
+      <toolbar xmi:id="_wLscMbM0Eemd29yBMrgCBg" elementId="org.eclipse.pde.runtime.LogView" visible="false"/>
     </sharedElements>
     <trimBars xmi:id="_6k13UaneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.platform">
       <children xsi:type="menu:ToolBar" xmi:id="_7gY5kKneEemWQfSUKdD5Vw" elementId="group.file" toBeRendered="false">
@@ -584,7 +594,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7gauwKneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_9TCzALmBEemquPvNlhyfSw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_6nRgQ6neEemWQfSUKdD5Vw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ofNVwLtEEem_TsBF1CxN_w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_6nRgQ6neEemWQfSUKdD5Vw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7gbV0KneEemWQfSUKdD5Vw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -630,7 +640,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7gdLAKneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_9TNLELmBEemquPvNlhyfSw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_6nPrE6neEemWQfSUKdD5Vw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ofXt0LtEEem_TsBF1CxN_w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_6nPrE6neEemWQfSUKdD5Vw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7gdLAaneEemWQfSUKdD5Vw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -673,7 +683,7 @@
         <tags>Draggable</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="_6k13VqneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.platform" toBeRendered="false" side="Left">
+    <trimBars xmi:id="_6k13VqneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.platform" side="Left">
       <children xsi:type="menu:ToolControl" xmi:id="_8fC6MKneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.ide.perspectivestack(minimized)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <persistedState key="XSize" value="1405"/>
         <persistedState key="YSize" value="866"/>
@@ -688,9 +698,21 @@
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_jnhYoLtFEem_TsBF1CxN_w" elementId="topLeft(IDEWindow).(org.eclipse.jst.j2ee.J2EEPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
     </trimBars>
-    <trimBars xmi:id="_6k13V6neEemWQfSUKdD5Vw" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.platform" toBeRendered="false" side="Right">
+    <trimBars xmi:id="_6k13V6neEemWQfSUKdD5Vw" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.platform" side="Right">
       <children xsi:type="menu:ToolControl" xmi:id="_QCRJULkhEemOtNyPBxKSYg" elementId="org.eclipse.ui.editorss(IDEWindow).(com.ibm.zosconnect.ui.perspective.ZosConnectPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_joQ_gLtFEem_TsBF1CxN_w" elementId="topRight(IDEWindow).(org.eclipse.jst.j2ee.J2EEPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_jokhgLtFEem_TsBF1CxN_w" elementId="org.eclipse.ui.editorss(IDEWindow).(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
@@ -3193,503 +3215,503 @@
     <tags>View</tags>
     <tags>categoryTag:JPA</tags>
   </descriptors>
-  <descriptors xmi:id="_8C6A0LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.wmqInitiationQueues" label="MQ Initiation Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MQINI.GIF" tooltip="MQ Initiation Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR3Y4btEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.wmqInitiationQueues" label="MQ Initiation Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MQINI.GIF" tooltip="MQ Initiation Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.wmqInitiationQueues"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8C7O8LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.wmqConnectionStatistics" label="MQ Connection Statistics" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MQCONN.GIF" tooltip="MQ Connection Statistics" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR4nALtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.wmqConnectionStatistics" label="MQ Connection Statistics" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MQCONN.GIF" tooltip="MQ Connection Statistics" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.wmqConnectionStatistics"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8C72ALmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.unitOfWorkEnqueues" label="Unit of Work Enqueues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/UOWENQ.GIF" tooltip="Unit of Work Enqueues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR5OELtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.unitOfWorkEnqueues" label="Unit of Work Enqueues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/UOWENQ.GIF" tooltip="Unit of Work Enqueues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.unitOfWorkEnqueues"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8C8dELmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.localFiles" label="Local Files" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LOCFILE.GIF" tooltip="Local Files" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR51ILtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.localFiles" label="Local Files" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LOCFILE.GIF" tooltip="Local Files" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.localFiles"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8C9rMLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.rplList" label="RPL List" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/RPLLIST.GIF" tooltip="RPL List" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR6cMLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.rplList" label="RPL List" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/RPLLIST.GIF" tooltip="RPL List" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.rplList"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8C-SQLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.bundles" label="Bundles" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/BUNDLE.GIF" tooltip="Bundles" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR7DQLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.bundles" label="Bundles" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/BUNDLE.GIF" tooltip="Bundles" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.bundles"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8C-5ULmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.dynamicStorageAreas" label="Dynamic Storage Areas" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CICSDSA.GIF" tooltip="Dynamic Storage Areas" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR7qULtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.dynamicStorageAreas" label="Dynamic Storage Areas" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CICSDSA.GIF" tooltip="Dynamic Storage Areas" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.dynamicStorageAreas"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8C_gYLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.requestModelDefinitions" label="Request Model Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/RQMDEF.GIF" tooltip="Request Model Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR8RYLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.requestModelDefinitions" label="Request Model Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/RQMDEF.GIF" tooltip="Request Model Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.requestModelDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DAugLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.workloadRouterStatus" label="Workload Router Status" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAROUT.GIF" tooltip="Workload Router Status" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR84cLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.workloadRouterStatus" label="Workload Router Status" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAROUT.GIF" tooltip="Workload Router Status" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.workloadRouterStatus"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DBVkLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.eventProcessing" label="Event Processing" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EVNTGBL.GIF" tooltip="Event Processing" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR-GkLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.eventProcessing" label="Event Processing" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EVNTGBL.GIF" tooltip="Event Processing" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.eventProcessing"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DB8oLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.uriMaps" label="URI Maps" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/URIMAP.GIF" tooltip="URI Maps" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR-toLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.uriMaps" label="URI Maps" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/URIMAP.GIF" tooltip="URI Maps" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.uriMaps"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DCjsLmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.transactionDefinitions" label="Transaction Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TRANDEF.GIF" tooltip="Transaction Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nR_UsLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.transactionDefinitions" label="Transaction Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TRANDEF.GIF" tooltip="Transaction Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.transactionDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DDKwLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.processTypes" label="Process Types" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROCTYP.GIF" tooltip="Process Types" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSBJ4LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.processTypes" label="Process Types" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROCTYP.GIF" tooltip="Process Types" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.processTypes"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DDx0LmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.extraPartitionTdqueues" label="Extrapartition TD Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EXTRATDQ.GIF" tooltip="Extrapartition TD Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSBw8LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.extraPartitionTdqueues" label="Extrapartition TD Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EXTRATDQ.GIF" tooltip="Extrapartition TD Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.extraPartitionTdqueues"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DE_8LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.sharedTsqueues" label="Shared TS Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSQSHR.GIF" tooltip="Shared TS Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSCYALtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.sharedTsqueues" label="Shared TS Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSQSHR.GIF" tooltip="Shared TS Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.sharedTsqueues"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DFnALmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.applicationDefinitions" label="Application Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/APPLDEF.GIF" tooltip="Application Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSC_ELtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.applicationDefinitions" label="Application Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/APPLDEF.GIF" tooltip="Application Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.applicationDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DGOELmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.connectionDefinitions" label="ISC/MRO Connection Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CONNDEF.GIF" tooltip="ISC/MRO Connection Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSENMLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.connectionDefinitions" label="ISC/MRO Connection Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CONNDEF.GIF" tooltip="ISC/MRO Connection Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.connectionDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DG1ILmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.indirectTdqueues" label="Indirect TD Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/INDTDQ.GIF" tooltip="Indirect TD Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSE0QLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.indirectTdqueues" label="Indirect TD Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/INDTDQ.GIF" tooltip="Indirect TD Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.indirectTdqueues"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DIDQLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.platforms" label="Platforms" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PLATFORM.GIF" tooltip="Platforms" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSFbULtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.platforms" label="Platforms" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PLATFORM.GIF" tooltip="Platforms" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.platforms"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DIqULmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.regions" label="Regions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CICSRGN.GIF" tooltip="Regions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSGCYLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.regions" label="Regions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CICSRGN.GIF" tooltip="Regions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.regions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DJRYLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.systemLinks" label="System Links" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/SYSLINK.png" tooltip="System Links" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSHQgLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.systemLinks" label="System Links" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/SYSLINK.png" tooltip="System Links" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.systemLinks"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DJ4cLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.tcpipServiceDefinitions" label="TCP/IP Service Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TCPDEF.GIF" tooltip="TCP/IP Service Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSH3kLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.tcpipServiceDefinitions" label="TCP/IP Service Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TCPDEF.GIF" tooltip="TCP/IP Service Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.tcpipServiceDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DLGkLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.workloadAffinities" label="Workload Affinities" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMATAFF.GIF" tooltip="Workload Affinities" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSIeoLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.workloadAffinities" label="Workload Affinities" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMATAFF.GIF" tooltip="Workload Affinities" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.workloadAffinities"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DLtoLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.workloadTransactionGroups" label="Workload Transaction Groups" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMATGRP.GIF" tooltip="Workload Transaction Groups" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSJFsLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.workloadTransactionGroups" label="Workload Transaction Groups" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMATGRP.GIF" tooltip="Workload Transaction Groups" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.workloadTransactionGroups"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DMUsLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.cmasToCmasLinks" label="CMAS To CMAS Links" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CMTCMLNK.GIF" tooltip="CMAS To CMAS Links" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSKT0LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.cmasToCmasLinks" label="CMAS To CMAS Links" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CMTCMLNK.GIF" tooltip="CMAS To CMAS Links" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.cmasToCmasLinks"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DM7wLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.programDefinitions" label="Program Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROGDEF.GIF" tooltip="Program Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSK64LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.programDefinitions" label="Program Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROGDEF.GIF" tooltip="Program Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.programDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DOJ4LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.bundleParts" label="Bundle Parts" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/BUNDPART.GIF" tooltip="Bundle Parts" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSLh8LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.bundleParts" label="Bundle Parts" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/BUNDPART.GIF" tooltip="Bundle Parts" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.bundleParts"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DOw8LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.ipicConnections" label="IPIC Connections" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/IPCONN.GIF" tooltip="IPIC Connections" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSMJALtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.ipicConnections" label="IPIC Connections" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/IPCONN.GIF" tooltip="IPIC Connections" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.ipicConnections"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DPYALmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.transactionDumps" label="Transaction Dumps" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TRANDUMP.GIF" tooltip="Transaction Dumps" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSNXILtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.transactionDumps" label="Transaction Dumps" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TRANDUMP.GIF" tooltip="Transaction Dumps" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.transactionDumps"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DP_ELmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.documentTemplateDefinitions" label="Document Template Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DOCDEF.GIF" tooltip="Document Template Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSN-MLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.documentTemplateDefinitions" label="Document Template Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DOCDEF.GIF" tooltip="Document Template Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.documentTemplateDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DRNMLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.typetermDefinitions" label="Typeterm Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TYPTMDEF.GIF" tooltip="Typeterm Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSOlQLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.typetermDefinitions" label="Typeterm Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TYPTMDEF.GIF" tooltip="Typeterm Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.typetermDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DR0QLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.pipelines" label="Pipelines" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PIPELINE.GIF" tooltip="Pipelines" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSPMULtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.pipelines" label="Pipelines" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PIPELINE.GIF" tooltip="Pipelines" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.pipelines"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DSbULmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.regionDefinitions" label="System Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CSYSDEF.GIF" tooltip="System Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSPzYLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.regionDefinitions" label="System Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CSYSDEF.GIF" tooltip="System Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.regionDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DTCYLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.workloadTargetStatus" label="Workload Target Status" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMATARG.GIF" tooltip="Workload Target Status" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSQacLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.workloadTargetStatus" label="Workload Target Status" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMATARG.GIF" tooltip="Workload Target Status" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.workloadTargetStatus"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DUQgLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.tsModelDefinitions" label="TS Model Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSMDEF.GIF" tooltip="TS Model Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSRBgLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.tsModelDefinitions" label="TS Model Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSMDEF.GIF" tooltip="TS Model Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.tsModelDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DU3kLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.workloadSpecifications" label="Workload Specifications" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMSPEC.GIF" tooltip="Workload Specifications" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSRokLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.workloadSpecifications" label="Workload Specifications" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMSPEC.GIF" tooltip="Workload Specifications" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.workloadSpecifications"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DVeoLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.tsModels" label="TS Models" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSMODEL.GIF" tooltip="TS Models" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSSPoLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.tsModels" label="TS Models" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSMODEL.GIF" tooltip="TS Models" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.tsModels"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DWFsLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.atomServices" label="Atom Services" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/ATOMSERV.GIF" tooltip="Atom Services" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSS2sLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.atomServices" label="Atom Services" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/ATOMSERV.GIF" tooltip="Atom Services" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.atomServices"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DWswLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.wmqConnections" label="MQ Connections" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MQCON.GIF" tooltip="MQ Connections" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSUE0LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.wmqConnections" label="MQ Connections" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MQCON.GIF" tooltip="MQ Connections" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.wmqConnections"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DX64LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.db2ConnectionDefinitions" label="DB2 Connection Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2CDEF.GIF" tooltip="DB2 Connection Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSUr4LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.db2ConnectionDefinitions" label="DB2 Connection Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2CDEF.GIF" tooltip="DB2 Connection Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.db2ConnectionDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DYh8LmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.remoteTransactions" label="Remote Transactions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/REMTRAN.GIF" tooltip="Remote Transactions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSVS8LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.remoteTransactions" label="Remote Transactions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/REMTRAN.GIF" tooltip="Remote Transactions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.remoteTransactions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DZJALmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.globalUserExits" label="Global User Exits" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EXITGLUE.GIF" tooltip="Global User Exits" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSWhELtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.globalUserExits" label="Global User Exits" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EXITGLUE.GIF" tooltip="Global User Exits" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.globalUserExits"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DZwELmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.platformDefinitions" label="Platform Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PLATDEF.GIF" tooltip="Platform Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSXIILtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.platformDefinitions" label="Platform Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PLATDEF.GIF" tooltip="Platform Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.platformDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Da-MLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.documentTemplates" label="Document Templates" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DOCTEMP.GIF" tooltip="Document Templates" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSYWQLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.documentTemplates" label="Document Templates" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DOCTEMP.GIF" tooltip="Document Templates" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.documentTemplates"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DblQLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.partitionSetDefinitions" label="Partition Set Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PRTNDEF.GIF" tooltip="Partition Set Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSY9ULtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.partitionSetDefinitions" label="Partition Set Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PRTNDEF.GIF" tooltip="Partition Set Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.partitionSetDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DcMULmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.systemDumps" label="System Dumps" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/SYSDUMP.GIF" tooltip="System Dumps" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSZkYLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.systemDumps" label="System Dumps" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/SYSDUMP.GIF" tooltip="System Dumps" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.systemDumps"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DczYLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.webServices" label="Web Services" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WEBSERV.GIF" tooltip="Web Services" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSaLcLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.webServices" label="Web Services" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WEBSERV.GIF" tooltip="Web Services" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.webServices"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DeBgLmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.dsnames" label="Physical Data Sets" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DSNAME.GIF" tooltip="Physical Data Sets" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSaygLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.dsnames" label="Physical Data Sets" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DSNAME.GIF" tooltip="Physical Data Sets" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.dsnames"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DeokLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.uriMapDefinitions" label="URI Map Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/URIMPDEF.GIF" tooltip="URI Map Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSbZkLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.uriMapDefinitions" label="URI Map Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/URIMPDEF.GIF" tooltip="URI Map Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.uriMapDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DfPoLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.atomServiceDefinitions" label="Atom Service Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/ATOMDEF.GIF" tooltip="Atom Service Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nScnsLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.atomServiceDefinitions" label="Atom Service Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/ATOMDEF.GIF" tooltip="Atom Service Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.atomServiceDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Df2sLmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.terminals" label="Terminals" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TERMNL.GIF" tooltip="Terminals" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSdOwLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.terminals" label="Terminals" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TERMNL.GIF" tooltip="Terminals" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.terminals"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DhE0LmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.zosworkload" label="z/OS Workload Management" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MVSWLM.GIF" tooltip="z/OS Workload Management" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSd10LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.zosworkload" label="z/OS Workload Management" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MVSWLM.GIF" tooltip="z/OS Workload Management" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.zosworkload"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Dhr4LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.db2Transactions" label="DB2 Transactions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2TRN.GIF" tooltip="DB2 Transactions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSec4LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.db2Transactions" label="DB2 Transactions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2TRN.GIF" tooltip="DB2 Transactions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.db2Transactions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DiS8LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.db2Entries" label="DB2 Entries" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2ENTRY.GIF" tooltip="DB2 Entries" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSec4btEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.db2Entries" label="DB2 Entries" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2ENTRY.GIF" tooltip="DB2 Entries" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.db2Entries"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Di6ALmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.bundleDefinitions" label="Bundle Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/BUNDDEF.GIF" tooltip="Bundle Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSfrALtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.bundleDefinitions" label="Bundle Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/BUNDDEF.GIF" tooltip="Bundle Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.bundleDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DkIILmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.db2TransactionDefinitions" label="DB2 Transaction Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2TDEF.GIF" tooltip="DB2 Transaction Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSgSELtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.db2TransactionDefinitions" label="DB2 Transaction Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2TDEF.GIF" tooltip="DB2 Transaction Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.db2TransactionDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DkvMLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.managedRegions" label="Managed Regions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MAS.GIF" tooltip="Managed Regions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSg5ILtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.managedRegions" label="Managed Regions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MAS.GIF" tooltip="Managed Regions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.managedRegions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DlWQLmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.tsqueues" label="TS Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSQNAME.GIF" tooltip="TS Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nShgMLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.tsqueues" label="TS Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSQNAME.GIF" tooltip="TS Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.tsqueues"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Dl9ULmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.epAdapters" label="EP Adapters" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EPADAPT.GIF" tooltip="EP Adapters" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nShgMbtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.epAdapters" label="EP Adapters" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EPADAPT.GIF" tooltip="EP Adapters" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.epAdapters"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DnLcLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.globalTsQueueStatistics" label="Global TS Queue Statistics" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSQGBL.GIF" tooltip="Global TS Queue Statistics" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSiHQLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.globalTsQueueStatistics" label="Global TS Queue Statistics" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TSQGBL.GIF" tooltip="Global TS Queue Statistics" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.globalTsQueueStatistics"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DnygLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.streamNames" label="Stream Names" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/STREAMNM.GIF" tooltip="Stream Names" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSiuULtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.streamNames" label="Stream Names" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/STREAMNM.GIF" tooltip="Stream Names" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.streamNames"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DoZkLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.webServiceDefinitions" label="Web Service Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WEBSVDEF.GIF" tooltip="Web Service Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSjVYLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.webServiceDefinitions" label="Web Service Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WEBSVDEF.GIF" tooltip="Web Service Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.webServiceDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DpAoLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.cicsstors" label="Global Dynamic Storage Areas" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CICSSTOR.GIF" tooltip="Global Dynamic Storage Areas" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSj8cLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.cicsstors" label="Global Dynamic Storage Areas" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CICSSTOR.GIF" tooltip="Global Dynamic Storage Areas" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.cicsstors"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DqOwLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.deployedJARFileDefinitions" label="Deployed JAR File Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EJDJDEF.GIF" tooltip="Deployed JAR File Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSkjgLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.deployedJARFileDefinitions" label="Deployed JAR File Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EJDJDEF.GIF" tooltip="Deployed JAR File Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.deployedJARFileDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Dq10LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.tcpipServices" label="TCP/IP Services" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TCPIPS.GIF" tooltip="TCP/IP Services" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSlKkLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.tcpipServices" label="TCP/IP Services" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TCPIPS.GIF" tooltip="TCP/IP Services" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.tcpipServices"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Drc4LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.applications" label="Applications" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/APPLCTN.GIF" tooltip="Applications" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSlxoLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.applications" label="Applications" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/APPLCTN.GIF" tooltip="Applications" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.applications"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DsD8LmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.connections" label="ISC/MRO Connections" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CONNECT.GIF" tooltip="ISC/MRO Connections" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSm_wLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.connections" label="ISC/MRO Connections" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CONNECT.GIF" tooltip="ISC/MRO Connections" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.connections"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DtSELmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.libraryDefinitions" label="LIBRARY Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LIBDEF.GIF" tooltip="LIBRARY Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSnm0LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.libraryDefinitions" label="LIBRARY Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LIBDEF.GIF" tooltip="LIBRARY Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.libraryDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Dt5ILmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.enqueueModelDefinitions" label="Enqueue Model Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/ENQMDEF.GIF" tooltip="Enqueue Model Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSoN4LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.enqueueModelDefinitions" label="Enqueue Model Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/ENQMDEF.GIF" tooltip="Enqueue Model Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.enqueueModelDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DugMLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.libraryDSNames" label="LIBRARY DS Names" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LIBDSN.GIF" tooltip="LIBRARY DS Names" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSo08LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.libraryDSNames" label="LIBRARY DS Names" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LIBDSN.GIF" tooltip="LIBRARY DS Names" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.libraryDSNames"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DvHQLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.jvmServerDefinitions" label="JVM Server Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JVMSVDEF.GIF" tooltip="JVM Server Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSpcALtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.jvmServerDefinitions" label="JVM Server Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JVMSVDEF.GIF" tooltip="JVM Server Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.jvmServerDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DwVYLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.profileDefinitions" label="Profile Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROFDEF.GIF" tooltip="Profile Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSqDELtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.profileDefinitions" label="Profile Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROFDEF.GIF" tooltip="Profile Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.profileDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Dw8cLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.transactionClassDefinitions" label="Transaction Class Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TRNCLDEF.GIF" tooltip="Transaction Class Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSqqILtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.transactionClassDefinitions" label="Transaction Class Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TRNCLDEF.GIF" tooltip="Transaction Class Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.transactionClassDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DxjgLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.transactionClasses" label="Transaction Classes" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TRANCLAS.GIF" tooltip="Transaction Classes" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSrRMLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.transactionClasses" label="Transaction Classes" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TRANCLAS.GIF" tooltip="Transaction Classes" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.transactionClasses"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DyKkLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.cmasToCmasLinkDefinitions" label="CMAS To CMAS Link Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CMTCMDEF.GIF" tooltip="CMAS To CMAS Link Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSr4QLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.cmasToCmasLinkDefinitions" label="CMAS To CMAS Link Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CMTCMDEF.GIF" tooltip="CMAS To CMAS Link Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.cmasToCmasLinkDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8DzYsLmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.intraPartitionTdqueues" label="Intrapartition TD Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/INTRATDQ.GIF" tooltip="Intrapartition TD Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSsfULtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.intraPartitionTdqueues" label="Intrapartition TD Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/INTRATDQ.GIF" tooltip="Intrapartition TD Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.intraPartitionTdqueues"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8Dz_wLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.mapSetDefinitions" label="Map Set Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MAPDEF.GIF" tooltip="Map Set Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nStGYLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.mapSetDefinitions" label="Map Set Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MAPDEF.GIF" tooltip="Map Set Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.mapSetDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D0m0LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.partnerDefinitions" label="Partner Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PARTDEF.GIF" tooltip="Partner Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSttcLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.partnerDefinitions" label="Partner Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PARTDEF.GIF" tooltip="Partner Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.partnerDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D1N4LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.cicsplexesView" label="CICSplexes" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CICSPLEX.GIF" tooltip="CICSplexes" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSuUgLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.cicsplexesView" label="CICSplexes" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CICSPLEX.GIF" tooltip="CICSplexes" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.cicsplexesView"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D108LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.wlmActiveWorkloads" label="Workloads" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAWORK.GIF" tooltip="Workloads" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSu7kLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.wlmActiveWorkloads" label="Workloads" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAWORK.GIF" tooltip="Workloads" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.wlmActiveWorkloads"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D3DELmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.fileDefinitions" label="File Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/FILEDEF.GIF" tooltip="File Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSvioLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.fileDefinitions" label="File Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/FILEDEF.GIF" tooltip="File Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.fileDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D3qILmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.corbaServerDefinitions" label="CorbaServer Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EJCODEF.GIF" tooltip="CorbaServer Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSwJsLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.corbaServerDefinitions" label="CorbaServer Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EJCODEF.GIF" tooltip="CorbaServer Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.corbaServerDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D4RMLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.regionGroupDefinitions" label="System Group Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CSYSGRP.GIF" tooltip="System Group Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSxX0LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.regionGroupDefinitions" label="System Group Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CSYSGRP.GIF" tooltip="System Group Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.regionGroupDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D5fULmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.lsrPools" label="LSR Pools" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LSRPOOL.png" tooltip="LSR Pools" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSx-4LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.lsrPools" label="LSR Pools" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LSRPOOL.png" tooltip="LSR Pools" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.lsrPools"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D6GYLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.osgiBundles" label="OSGi Bundles" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/OSGIBUND.GIF" tooltip="OSGi Bundles" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSyl8LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.osgiBundles" label="OSGi Bundles" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/OSGIBUND.GIF" tooltip="OSGi Bundles" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.osgiBundles"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D6tcLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.libraries" label="LIBRARYs" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LIBRARY.GIF" tooltip="LIBRARYs" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSzNALtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.libraries" label="LIBRARYs" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LIBRARY.GIF" tooltip="LIBRARYs" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.libraries"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D7UgLmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.views.taskAssociations" label="Task Associations" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TASKASSC.GIF" tooltip="Task Associations" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nSz0ELtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.views.taskAssociations" label="Task Associations" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TASKASSC.GIF" tooltip="Task Associations" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.views.taskAssociations"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D77kLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.cmasDetails" label="CMAS Details" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CMAS.GIF" tooltip="CMAS Details" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS0bILtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.cmasDetails" label="CMAS Details" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CMAS.GIF" tooltip="CMAS Details" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.cmasDetails"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D9JsLmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.events" label="RTA Events" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EVENT.GIF" tooltip="RTA Events" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS1CMLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.events" label="RTA Events" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EVENT.GIF" tooltip="RTA Events" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.events"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D9wwLmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.localTransactions" label="Local Transactions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LOCTRAN.GIF" tooltip="Local Transactions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS1pQLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.localTransactions" label="Local Transactions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LOCTRAN.GIF" tooltip="Local Transactions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.localTransactions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D-X0LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.journalModelDefinitions" label="Journal Model Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JRNMDEF.GIF" tooltip="Journal Model Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS2QULtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.journalModelDefinitions" label="Journal Model Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JRNMDEF.GIF" tooltip="Journal Model Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.journalModelDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D--4LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.wmqConnectionDefinitions" label="MQ Connection Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MQCONDEF.GIF" tooltip="MQ Connection Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS23YLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.wmqConnectionDefinitions" label="MQ Connection Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/MQCONDEF.GIF" tooltip="MQ Connection Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.wmqConnectionDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8D_l8LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.jvmServers" label="JVM Servers" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JVMSERV.GIF" tooltip="JVM Servers" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS3ecLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.jvmServers" label="JVM Servers" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JVMSERV.GIF" tooltip="JVM Servers" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.jvmServers"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EANALmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.processTypeDefinitions" label="Process Type Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROCDEF.GIF" tooltip="Process Type Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS4FgLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.processTypeDefinitions" label="Process Type Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROCDEF.GIF" tooltip="Process Type Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.processTypeDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EBbILmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.lsrPoolBuffers" label="LSR Pool Buffers" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LSRPBUF.png" tooltip="LSR Pool Buffers" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS4skLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.lsrPoolBuffers" label="LSR Pool Buffers" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LSRPBUF.png" tooltip="LSR Pool Buffers" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.lsrPoolBuffers"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ECCMLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.db2EntryDefinitions" label="DB2 Entry Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2EDEF.GIF" tooltip="DB2 Entry Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS5ToLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.db2EntryDefinitions" label="DB2 Entry Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2EDEF.GIF" tooltip="DB2 Entry Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.db2EntryDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ECpQLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.terminalDefinitions" label="Terminal Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TERMDEF.GIF" tooltip="Terminal Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS56sLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.terminalDefinitions" label="Terminal Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TERMDEF.GIF" tooltip="Terminal Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.terminalDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EDQULmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.sessionDefinitions" label="Session Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/SESSDEF.GIF" tooltip="Session Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS6hwLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.sessionDefinitions" label="Session Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/SESSDEF.GIF" tooltip="Session Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.sessionDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EEecLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.xmlTransforms" label="XML Transforms" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/XMLTRANS.GIF" tooltip="XML Transforms" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS7I0LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.xmlTransforms" label="XML Transforms" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/XMLTRANS.GIF" tooltip="XML Transforms" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.xmlTransforms"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EFFgLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.dbctlsss" label="DBCTL Subsystems" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DBCTLSS.GIF" tooltip="DBCTL Subsystems" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS7v4LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.dbctlsss" label="DBCTL Subsystems" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DBCTLSS.GIF" tooltip="DBCTL Subsystems" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.dbctlsss"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EFskLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.workloadTransactions" label="Workload Transactions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMATRAN.GIF" tooltip="Workload Transactions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS8W8LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.workloadTransactions" label="Workload Transactions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMATRAN.GIF" tooltip="Workload Transactions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.workloadTransactions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EGToLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.osgiServices" label="OSGi Services" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/OSGISERV.GIF" tooltip="OSGi Services" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS8-ALtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.osgiServices" label="OSGi Services" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/OSGISERV.GIF" tooltip="OSGi Services" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.osgiServices"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EHhwLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.journalModels" label="Journal Models" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JRNLMODL.GIF" tooltip="Journal Models" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS9lELtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.journalModels" label="Journal Models" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JRNLMODL.GIF" tooltip="Journal Models" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.journalModels"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EII0LmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.remoteFiles" label="Remote Files" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/REMFILE.GIF" tooltip="Remote Files" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS-MILtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.remoteFiles" label="Remote Files" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/REMFILE.GIF" tooltip="Remote Files" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.remoteFiles"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EIv4LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.workloadTargets" label="Workload Targets" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAWAOR.GIF" tooltip="Workload Targets" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nS-zMLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.workloadTargets" label="Workload Targets" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAWAOR.GIF" tooltip="Workload Targets" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.workloadTargets"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EJW8LmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.datatables" label="Data Tables" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CMDT.GIF" tooltip="Data Tables" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTABULtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.datatables" label="Data Tables" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CMDT.GIF" tooltip="Data Tables" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.datatables"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EJ-ALmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.epAdapterSets" label="EP Adapter Sets" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EPADSET.GIF" tooltip="EP Adapter Sets" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTAoYLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.epAdapterSets" label="EP Adapter Sets" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EPADSET.GIF" tooltip="EP Adapter Sets" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.epAdapterSets"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ELMILmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.tasks" label="Tasks" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TASK.GIF" tooltip="Tasks" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTAoYbtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.tasks" label="Tasks" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TASK.GIF" tooltip="Tasks" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.tasks"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ELzMLmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.eventbindings" label="Event Bindings" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EVNTBIND.GIF" tooltip="Event Bindings" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTB2gLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.eventbindings" label="Event Bindings" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EVNTBIND.GIF" tooltip="Event Bindings" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.eventbindings"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EMaQLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.db2Connections" label="DB2 Connections" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2CONN.GIF" tooltip="DB2 Connections" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTCdkLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.db2Connections" label="DB2 Connections" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/DB2CONN.GIF" tooltip="DB2 Connections" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.db2Connections"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ENBULmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.journalNames" label="Journal Names" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JRNLNAME.GIF" tooltip="Journal Names" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTDEoLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.journalNames" label="Journal Names" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/JRNLNAME.GIF" tooltip="Journal Names" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.journalNames"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ENoYLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.lsrPoolDefinitions" label="LSR Pool Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LSRDEF.png" tooltip="LSR Pool Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTDrsLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.lsrPoolDefinitions" label="LSR Pool Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/LSRDEF.png" tooltip="LSR Pool Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.lsrPoolDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EO2gLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.intervalControlRequests" label="Interval Control Requests" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/REQID.GIF" tooltip="Interval Control Requests" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTESwLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.intervalControlRequests" label="Interval Control Requests" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/REQID.GIF" tooltip="Interval Control Requests" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.intervalControlRequests"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EPdkLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.ipicConnectionDefinitions" label="IPIC Connection Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/IPCONDEF.GIF" tooltip="IPIC Connection Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTE50LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.ipicConnectionDefinitions" label="IPIC Connection Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/IPCONDEF.GIF" tooltip="IPIC Connection Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.ipicConnectionDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EQEoLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.unitOfWorkLinks" label="Unit of Work Links" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/UOWLINK.GIF" tooltip="Unit of Work Links" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTFg4LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.unitOfWorkLinks" label="Unit of Work Links" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/UOWLINK.GIF" tooltip="Unit of Work Links" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.unitOfWorkLinks"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EQrsLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.taskRelatedUserExits" label="Task Related User Exits" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EXITTRUE.GIF" tooltip="Task Related User Exits" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTGH8LtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.taskRelatedUserExits" label="Task Related User Exits" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EXITTRUE.GIF" tooltip="Task Related User Exits" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.taskRelatedUserExits"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ERSwLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.workloadRouters" label="Workload Routers" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAWTOR.GIF" tooltip="Workload Routers" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTGH8btEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.workloadRouters" label="Workload Routers" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAWTOR.GIF" tooltip="Workload Routers" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.workloadRouters"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ER50LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.cicsplexDefinitions" label="CICSplex Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CPLEXDEF.GIF" tooltip="CICSplex Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTGvALtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.cicsplexDefinitions" label="CICSplex Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/CPLEXDEF.GIF" tooltip="CICSplex Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.cicsplexDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ESg4LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.activeWorkloadDefinitions" label="Active Workload Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAWDEF.GIF" tooltip="Active Workload Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTHWELtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.activeWorkloadDefinitions" label="Active Workload Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/WLMAWDEF.GIF" tooltip="Active Workload Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.activeWorkloadDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ETH8LmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.completedTasks" label="Completed Tasks" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/HTASK.GIF" tooltip="Completed Tasks" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTH9ILtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.completedTasks" label="Completed Tasks" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/HTASK.GIF" tooltip="Completed Tasks" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.completedTasks"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8ETvALmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.pipelineDefinitions" label="Pipeline Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PIPEDEF.GIF" tooltip="Pipeline Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTIkMLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.pipelineDefinitions" label="Pipeline Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PIPEDEF.GIF" tooltip="Pipeline Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.pipelineDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EUWELmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.programs" label="Programs" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROGRAM.GIF" tooltip="Programs" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTJLQLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.programs" label="Programs" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/PROGRAM.GIF" tooltip="Programs" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.programs"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EVkMLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.tdQueueDefinitions" label="TD Queue Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TDQDEF.GIF" tooltip="TD Queue Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTJyULtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.tdQueueDefinitions" label="TD Queue Definitions" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/TDQDEF.GIF" tooltip="TD Queue Definitions" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.tdQueueDefinitions"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EWLQLmBEemquPvNlhyfSw" elementId="com.ibm.cics.sm.ui.views.captureSpecifications" label="Capture Specifications" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EVCSPEC.GIF" tooltip="Capture Specifications" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTKZYLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.sm.ui.views.captureSpecifications" label="Capture Specifications" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/EVCSPEC.GIF" tooltip="Capture Specifications" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.sm.ui.views.captureSpecifications"/>
     <tags>cicsTableView</tags>
   </descriptors>
-  <descriptors xmi:id="_8EWyULmBEemquPvNlhyfSw" elementId="com.ibm.cics.core.ui.view.remoteTdqueues" label="Remote TD Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/REMTDQ.GIF" tooltip="Remote TD Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
+  <descriptors xmi:id="_nTLAcLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.core.ui.view.remoteTdqueues" label="Remote TD Queues" iconURI="platform:/plugin/com.ibm.cics.model.ui/icons/cicstypes/REMTDQ.GIF" tooltip="Remote TD Queues" allowMultiple="true" category="CICS" closeable="true" contributionURI="bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView">
     <persistedState key="TableID" value="com.ibm.cics.core.ui.view.remoteTdqueues"/>
     <tags>cicsTableView</tags>
   </descriptors>
@@ -3802,6 +3824,14 @@
     <tags>menuContribution:menu</tags>
   </menuContributions>
   <menuContributions xmi:id="_8tTosLmBEemquPvNlhyfSw" elementId="null:578627030" positionInParent="after=additions" parentId="com.ibm.etools.fm.ui.commands.db2.console.historyPick">
+    <tags>scheme:menu</tags>
+    <tags>menuContribution:menu</tags>
+  </menuContributions>
+  <menuContributions xmi:id="_n63SkLtEEem_TsBF1CxN_w" elementId="null:54388684" positionInParent="after=additions" parentId="com.ibm.etools.fm.ui.model.commands.executeLastAction">
+    <tags>scheme:menu</tags>
+    <tags>menuContribution:menu</tags>
+  </menuContributions>
+  <menuContributions xmi:id="_n635oLtEEem_TsBF1CxN_w" elementId="null:2019376579" positionInParent="after=additions" parentId="com.ibm.etools.fm.ui.commands.db2.console.historyPick">
     <tags>scheme:menu</tags>
     <tags>menuContribution:menu</tags>
   </menuContributions>
@@ -6051,8 +6081,8 @@
   <commands xmi:id="_ieGDwLM0Eemd29yBMrgCBg" elementId="AUTOGEN:::org.eclipse.emf.mapping.xsd2ecore.presentation.XSD2EcoreContributionID/org.eclipse.emf.mapping.action.CreateMappingActionID" commandName="Create Mapping" description="Create a new mapping between the selected objects." category="_6mxJ-6neEemWQfSUKdD5Vw"/>
   <commands xmi:id="_ieGq0LM0Eemd29yBMrgCBg" elementId="AUTOGEN:::org.eclipse.emf.mapping.xsd2ecore.presentation.XSD2EcoreContributionID/org.eclipse.emf.mapping.action.RemoveMappingActionID" commandName="Remove Mapping" description="Remove the mapping associated with the selected objects." category="_6mxJ-6neEemWQfSUKdD5Vw"/>
   <commands xmi:id="_ieMxcLM0Eemd29yBMrgCBg" elementId="AUTOGEN:::com.ibm.ws.st.ui.viewContribution/com.ibm.ws.st.ui.view.action" commandName="Pause automatic publishing" description="Pause automatic publishing" category="_6mxJ-6neEemWQfSUKdD5Vw"/>
-  <commands xmi:id="_8NWWQLmBEemquPvNlhyfSw" elementId="com.ibm.cics.open.view.command" commandName="com.ibm.cics.open.view.command" category="_6mxJ-6neEemWQfSUKdD5Vw">
-    <parameters xmi:id="_8NWWQbmBEemquPvNlhyfSw" elementId="com.ibm.cics.open.view.command.viewid" name="com.ibm.cics.open.view.command.viewid"/>
+  <commands xmi:id="_nbiSQLtEEem_TsBF1CxN_w" elementId="com.ibm.cics.open.view.command" commandName="com.ibm.cics.open.view.command" category="_6mxJ-6neEemWQfSUKdD5Vw">
+    <parameters xmi:id="_nbiSQbtEEem_TsBF1CxN_w" elementId="com.ibm.cics.open.view.command.viewid" name="com.ibm.cics.open.view.command.viewid"/>
   </commands>
   <addons xmi:id="_6k13XaneEemWQfSUKdD5Vw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_6k13XqneEemWQfSUKdD5Vw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
@@ -6065,7 +6095,7 @@
   <addons xmi:id="_6k13ZaneEemWQfSUKdD5Vw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_6k13ZqneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_6lMcoKneEemWQfSUKdD5Vw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_nUEYULtEEem_TsBF1CxN_w" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_6mwi4KneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_6mwi4aneEemWQfSUKdD5Vw" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>
