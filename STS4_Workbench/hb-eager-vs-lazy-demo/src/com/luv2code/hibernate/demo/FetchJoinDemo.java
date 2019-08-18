@@ -3,6 +3,7 @@ package com.luv2code.hibernate.demo;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
 import com.luv2code.hibernate.entity.Course;
 import com.luv2code.hibernate.entity.Instructor;
@@ -30,8 +31,20 @@ public class FetchJoinDemo {
 
 			// get an instructor
 			int theId = 1;
-			Instructor tempInstructor = session.get(Instructor.class, theId);
 
+			Query<Instructor> query = 
+					session.createQuery("select i from Instructor i "
+					+ "JOIN FETCH i.courses "
+					+ "where i.id=:theInstructorId",
+					Instructor.class);
+			
+			// set parameter on query
+			query.setParameter("theInstructorId", theId);
+			
+			// execute query and get the instructor
+			Instructor tempInstructor = query.getSingleResult();
+
+			// show the list of instructor
 			System.out.println("luv2code: Instructor : " + tempInstructor);
 			
 			// retrieve the courses of the instructor

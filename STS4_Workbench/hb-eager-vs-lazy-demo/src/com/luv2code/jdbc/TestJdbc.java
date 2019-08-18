@@ -9,7 +9,7 @@ public class TestJdbc {
 		// TODO Auto-generated method stub
 		String jdbcUrl = "jdbc:mysql://localhost:3306/hb-02-one-to-one-bi?useSSL=false&serverTimezone=UTC";
 		String user = "hbstudent";
-		String password = "hbstudent";
+		String password = "Password01!";
 		
 		try {
 			System.out.println("Connecting to database : " + jdbcUrl);

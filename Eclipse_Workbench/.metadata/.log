@@ -2578,3 +2578,721 @@ org.eclipse.jface.resource.DeviceResourceException: Unable to create resource UR
 
 !ENTRY com.ez.eclient.environment.EnvironmentServiceAdaptor 1 20000 2019-08-10 15:42:44.165
 !MESSAGE Stopping SSDP service...
+!SESSION 2019-08-15 17:05:15.372 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=12.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_SG
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-15 17:06:05.561
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:10.131
+!MESSAGE Removing part descriptor with the 'com.ez.analysisbrowser.views.AnalysisBrowserView' id and the 'Explore' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.611
+!MESSAGE Removing part descriptor with the 'com.ez.analysisbrowser.views.UsagesView' id and the 'Usage' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.719
+!MESSAGE Removing part descriptor with the 'com.ez.analysis.display.view.GraphsView' id and the 'Graphs' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.727
+!MESSAGE Removing part descriptor with the 'com.ez.analysis.display.view.ReportsView' id and the 'Reports' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.729
+!MESSAGE Removing part descriptor with the 'com.ez.analysis.display.view.GraphOverview' id and the 'Graph Overview' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.730
+!MESSAGE Removing part descriptor with the 'com.ez.analysis.display.view.GraphInnerStructureView' id and the 'Graph Inventory' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.731
+!MESSAGE Removing part descriptor with the 'com.ibm.ez.analysis.api.view.APIBrowserView' id and the 'Explore APIs' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.732
+!MESSAGE Removing part descriptor with the 'com.ez.navigator.view' id and the 'Navigator' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.733
+!MESSAGE Removing part descriptor with the 'org.eclipse.rse.shells.ui.view.commandsView' id and the 'Remote Shell' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.742
+!MESSAGE Removing part descriptor with the 'com.ibm.tpf.util.ui.TPFCommonConsole' id and the 'Remote Console' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.742
+!MESSAGE Removing part descriptor with the 'com.ibm.tpf.connectionmgr.errorlist.zOSErrorListView' id and the 'Remote Error List' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.743
+!MESSAGE Removing part descriptor with the 'com.ibm.ftt.ui.properties.propertiesmanagerview' id and the 'Property Group Manager' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.744
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.explorer.connections_view' id and the 'Host Connections' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.744
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.zos.ui.views.hfsfiles' id and the 'z/OS UNIX Files' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.745
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.zos.ui.views.job' id and the 'z/OS Job' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.745
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.zos.ui.views.mvsfiles' id and the 'Data Sets' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.746
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.zos.ui.views.jobs' id and the 'Jobs' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.747
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.cicsplexes' id and the 'CICSplex Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.748
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.internal.cloud.explorer' id and the 'Cloud Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.748
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.cicsPlexRepositories' id and the 'CICSplex Repositories' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.749
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.cmasExplorer' id and the 'CMAS Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.749
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.repositoryExplorer' id and the 'Repository Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.752
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.resourceGroupDefinitions' id and the 'Resource Group Definitions' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.753
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.resourceDescriptionDefinitions' id and the 'Group List Definitions' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.753
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.bundlesLegacy' id and the 'Bundles for Management Part' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.754
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.bundlePartsLegacy' id and the 'Bundle Parts for Bundle' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.755
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.cda.ui.views.syslog' id and the 'System Log' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.755
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.cda.ui.deploymentassistantprojects' id and the 'DA Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.756
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.cda.ui.mvscommand' id and the 'z/OS Command' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.757
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.cda.viz.views.connections' id and the 'Connections' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.757
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.cm.view.configurations' id and the 'Configurations' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.758
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.cm.view.migrationSchemes' id and the 'Migration Schemes' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.758
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.cm.view.history' id and the 'History' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.759
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.cm.view.searchresults' id and the 'Search Results' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.759
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.cm.view.changepackages' id and the 'Change Packages' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.760
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.dbfunc.debug.ui.views.DebugView' id and the 'DB Retrieval Debug' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.761
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.ia.ui.programexplorer' id and the 'Programs' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.761
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.ia.ui.transactionexplorer' id and the 'Transactions' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.762
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.ia.ui.webserviceexplorer' id and the 'Web Services' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.762
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.ia.ui.navigatorview' id and the 'IA Navigation' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.763
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.ia.ui.IAOperationsView' id and the 'IA Operations' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.764
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.ia.ui.CollectionIdsView' id and the 'Collection IDs' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.765
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.charteditor' id and the 'Graphical view' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.765
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.sheeteditor' id and the 'Sheet view' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.766
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.sheeteditor_multi' id and the 'Sheet view' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.767
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.pie_editor' id and the 'Pie view' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.767
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.overview' id and the 'CICS SMF Records' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.768
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.reportview' id and the 'Reports' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.769
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.alertsview' id and the 'Statistics Alerts' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.769
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.plotview' id and the 'Statistics viewer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.770
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.performance_alertsview' id and the 'Transaction Performance Alerts' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.770
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.pa.ui.performance_record' id and the 'Performance list record' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.771
+!MESSAGE Removing part descriptor with the 'com.ibm.ctg.ui.view_explorer' id and the 'CICS TG Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.771
+!MESSAGE Removing part descriptor with the 'com.ibm.ctg.ui.view_gateways' id and the 'Gateway daemons' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.772
+!MESSAGE Removing part descriptor with the 'com.ibm.ctg.ui.view_connections' id and the 'CICS connections' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.772
+!MESSAGE Removing part descriptor with the 'com.ibm.ctg.ui.view_webservices' id and the 'Web Services' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.773
+!MESSAGE Removing part descriptor with the 'com.ibm.etools.fm.views.Systems' id and the 'Systems Information' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.773
+!MESSAGE Removing part descriptor with the 'com.ibm.pdtools.common.component.lookup.view.LookupView' id and the 'Lookup' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.774
+!MESSAGE Removing part descriptor with the 'com.ibm.etools.fa.pdtclient.ui.reports' id and the 'Fault Entry List' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.774
+!MESSAGE Removing part descriptor with the 'com.ibm.etools.fa.pdtclient.ui.markers' id and the 'Markers' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.774
+!MESSAGE Removing part descriptor with the 'com.ibm.etools.fa.pdtclient.analytics.ui.view.AnalyticsView' id and the 'Fault Analytics' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.775
+!MESSAGE Removing part descriptor with the 'com.ibm.etools.fm.editor.formatted.pages.single.SingleView' id and the 'Single Mode Editor' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.775
+!MESSAGE Removing part descriptor with the 'com.ibm.etools.fm.editor.formatted1.view.ImsEditorView' id and the 'IMS Segment Editor' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.776
+!MESSAGE Removing part descriptor with the 'com.ibm.ftt.rse.mvs.client.ui.views.mappingview' id and the 'z/OS File System Mapping' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.776
+!MESSAGE Removing part descriptor with the 'com.ibm.ftt.rse.mvs.client.ui.views.PDSE2GenerationsView' id and the 'PDSEv2 Generations' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.777
+!MESSAGE Removing part descriptor with the 'com.ibm.ftt.rse.mvs.client.ui.views.search.MvsSystemSearchView' id and the 'Remote z/OS Search' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.777
+!MESSAGE Removing part descriptor with the 'com.ibm.mq.explorer.ui.internal.views.mqcontent' id and the 'MQ Explorer - Content' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.778
+!MESSAGE Removing part descriptor with the 'com.ibm.mq.explorer.ui.internal.views.mqnavigator' id and the 'MQ Explorer - Navigator' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.778
+!MESSAGE Removing part descriptor with the 'com.ibm.mq.explorer.tests.problemview' id and the 'MQ Explorer - Test Results' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.779
+!MESSAGE Removing part descriptor with the 'com.ibm.msl.mapping.ui.views.MappingEditorActionFeedbackView' id and the 'Mapping Action Feedback' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.779
+!MESSAGE Removing part descriptor with the 'com.ibm.msl.mapping.xml.ui.views.LiveMapView' id and the 'Test Map' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.780
+!MESSAGE Removing part descriptor with the 'com.ibm.magnolia.TeamCentral' id and the 'Team Dashboard' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.780
+!MESSAGE Removing part descriptor with the 'com.ibm.magnolia.workItemPreview' id and the 'Preview' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.781
+!MESSAGE Removing part descriptor with the 'com.ibm.team.process.rcp.ui.teamArtifactsNavigator' id and the 'Team Artifacts' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.781
+!MESSAGE Removing part descriptor with the 'com.ibm.team.process.operationAdviceView' id and the 'Team Advisor' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.782
+!MESSAGE Removing part descriptor with the 'com.ibm.team.process.projectAreaExplorer' id and the 'Team Organization' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.782
+!MESSAGE Removing part descriptor with the 'com.ibm.team.process.processTemplateExplorer' id and the 'Process Templates' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.783
+!MESSAGE Removing part descriptor with the 'com.ibm.magnolia.workItemExplorer' id and the 'Work Items' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.783
+!MESSAGE Removing part descriptor with the 'com.ibm.team.workitem.rcp.ui.WorkItemTagView' id and the 'Tag Cloud' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.784
+!MESSAGE Removing part descriptor with the 'com.ibm.team.filesystem.ce.ChangeSummaryView' id and the 'Change Summary' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.784
+!MESSAGE Removing part descriptor with the 'com.ibm.team.filesystem.history.FileSystemView' id and the 'Repository Files' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.785
+!MESSAGE Removing part descriptor with the 'com.ibm.team.filesystem.ui.changes.views.ChangeExplorerView' id and the 'Change Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.785
+!MESSAGE Removing part descriptor with the 'com.ibm.team.filesystem.ui.changes.views.LocalWorkspaceChangesView' id and the 'Pending Changes' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.786
+!MESSAGE Removing part descriptor with the 'com.ibm.team.filesystem.ui.changes.views.ScmPropertiesView' id and the 'Jazz SCM Properties' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.786
+!MESSAGE Removing part descriptor with the 'com.ibm.team.build.internal.ui.views.query.BuildQueryView' id and the 'Builds' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.787
+!MESSAGE Removing part descriptor with the 'com.ibm.team.apt.internal.ui.myWorkView' id and the 'My Work' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.787
+!MESSAGE Removing part descriptor with the 'com.ibm.team.collaboration.ui.internal.chatView' id and the 'Chat' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.788
+!MESSAGE Removing part descriptor with the 'com.ibm.team.connector.scm.cc.ide.ui.views.syncstreamview.SyncStreamView' id and the 'ClearCase Synchronized Streams' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.788
+!MESSAGE Removing part descriptor with the 'com.ibm.team.enterprise.build.ui.views.DependencySetView' id and the 'Dependency Set' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.789
+!MESSAGE Removing part descriptor with the 'com.ibm.team.enterprise.build.ui.subset.views.BuildSubsetFilesView' id and the 'Build Subset Files' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.789
+!MESSAGE Removing part descriptor with the 'com.ibm.team.enterprise.build.ui.views.BuildMapQueryView' id and the 'Build Map Query Results' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.790
+!MESSAGE Removing part descriptor with the 'com.ibm.team.enterprise.automation.internal.ui.view.SelectResultView' id and the 'Queried Results' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.790
+!MESSAGE Removing part descriptor with the 'com.ibm.team.enterprise.scd.ide.ui.view.ScanQueryView' id and the 'Scan Results' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.791
+!MESSAGE Removing part descriptor with the 'com.ibm.team.enterprise.metadata.query.ui.view.QueryView' id and the 'Source Code Data' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.792
+!MESSAGE Removing part descriptor with the 'com.ibm.team.interop.syncRulesView' id and the 'Synchronization Rules' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.792
+!MESSAGE Removing part descriptor with the 'com.ibm.team.interop.syncStatusView' id and the 'Synchronization Status' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.793
+!MESSAGE Removing part descriptor with the 'com.ibm.team.scm.svn.rcp.ui.SvnConnectionsView' id and the 'Jazz SVN Connections' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.793
+!MESSAGE Removing part descriptor with the 'com.ibm.teami.filesystem.ide.ui.compare.views.CompareRemoteView' id and the 'Compare with IBM i Libraries' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.794
+!MESSAGE Removing part descriptor with the 'com.ibm.teamz.supa.quick.search.view' id and the 'Context-Aware Quick Search' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.794
+!MESSAGE Removing part descriptor with the 'com.ibm.wmqfte.explorer.views.TransferProgressView' id and the 'Managed File Transfer - Current Transfer Progress' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.795
+!MESSAGE Removing part descriptor with the 'com.ibm.zosconnect.ui.nav.ZosConnectServerNav' id and the 'z/OS Connect EE Servers' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.832
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.wmqInitiationQueues' id and the 'MQ Initiation Queues' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.835
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.wmqConnectionStatistics' id and the 'MQ Connection Statistics' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.836
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.unitOfWorkEnqueues' id and the 'Unit of Work Enqueues' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.836
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.localFiles' id and the 'Local Files' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.837
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.rplList' id and the 'RPL List' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.837
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.bundles' id and the 'Bundles' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.839
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.dynamicStorageAreas' id and the 'Dynamic Storage Areas' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.840
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.requestModelDefinitions' id and the 'Request Model Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.841
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.workloadRouterStatus' id and the 'Workload Router Status' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.841
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.eventProcessing' id and the 'Event Processing' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.841
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.uriMaps' id and the 'URI Maps' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.842
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.transactionDefinitions' id and the 'Transaction Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.843
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.processTypes' id and the 'Process Types' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.844
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.extraPartitionTdqueues' id and the 'Extrapartition TD Queues' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.845
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.sharedTsqueues' id and the 'Shared TS Queues' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.845
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.applicationDefinitions' id and the 'Application Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.846
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.connectionDefinitions' id and the 'ISC/MRO Connection Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.847
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.indirectTdqueues' id and the 'Indirect TD Queues' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.847
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.platforms' id and the 'Platforms' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.848
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.regions' id and the 'Regions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.848
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.systemLinks' id and the 'System Links' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.849
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.tcpipServiceDefinitions' id and the 'TCP/IP Service Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.850
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.workloadAffinities' id and the 'Workload Affinities' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.850
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.workloadTransactionGroups' id and the 'Workload Transaction Groups' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.852
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.cmasToCmasLinks' id and the 'CMAS To CMAS Links' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.853
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.programDefinitions' id and the 'Program Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.853
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.bundleParts' id and the 'Bundle Parts' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.854
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.ipicConnections' id and the 'IPIC Connections' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.854
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.transactionDumps' id and the 'Transaction Dumps' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.855
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.documentTemplateDefinitions' id and the 'Document Template Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.855
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.typetermDefinitions' id and the 'Typeterm Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.856
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.pipelines' id and the 'Pipelines' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.856
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.regionDefinitions' id and the 'System Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.857
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.workloadTargetStatus' id and the 'Workload Target Status' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.857
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.tsModelDefinitions' id and the 'TS Model Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.857
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.workloadSpecifications' id and the 'Workload Specifications' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.858
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.tsModels' id and the 'TS Models' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.858
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.atomServices' id and the 'Atom Services' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.859
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.wmqConnections' id and the 'MQ Connections' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.859
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.db2ConnectionDefinitions' id and the 'DB2 Connection Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.859
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.remoteTransactions' id and the 'Remote Transactions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.860
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.globalUserExits' id and the 'Global User Exits' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.860
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.platformDefinitions' id and the 'Platform Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.861
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.documentTemplates' id and the 'Document Templates' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.861
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.partitionSetDefinitions' id and the 'Partition Set Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.862
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.systemDumps' id and the 'System Dumps' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.862
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.webServices' id and the 'Web Services' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.863
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.dsnames' id and the 'Physical Data Sets' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.863
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.uriMapDefinitions' id and the 'URI Map Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.863
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.atomServiceDefinitions' id and the 'Atom Service Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.864
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.terminals' id and the 'Terminals' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.864
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.zosworkload' id and the 'z/OS Workload Management' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.865
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.db2Transactions' id and the 'DB2 Transactions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.865
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.db2Entries' id and the 'DB2 Entries' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.866
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.bundleDefinitions' id and the 'Bundle Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.866
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.db2TransactionDefinitions' id and the 'DB2 Transaction Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.866
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.managedRegions' id and the 'Managed Regions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.867
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.tsqueues' id and the 'TS Queues' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.867
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.epAdapters' id and the 'EP Adapters' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.867
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.globalTsQueueStatistics' id and the 'Global TS Queue Statistics' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.868
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.streamNames' id and the 'Stream Names' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.868
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.webServiceDefinitions' id and the 'Web Service Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.869
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.cicsstors' id and the 'Global Dynamic Storage Areas' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.869
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.deployedJARFileDefinitions' id and the 'Deployed JAR File Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.869
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.tcpipServices' id and the 'TCP/IP Services' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.870
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.applications' id and the 'Applications' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.870
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.connections' id and the 'ISC/MRO Connections' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.871
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.libraryDefinitions' id and the 'LIBRARY Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.871
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.enqueueModelDefinitions' id and the 'Enqueue Model Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.872
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.libraryDSNames' id and the 'LIBRARY DS Names' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.872
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.jvmServerDefinitions' id and the 'JVM Server Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.873
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.profileDefinitions' id and the 'Profile Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.873
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.transactionClassDefinitions' id and the 'Transaction Class Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.873
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.transactionClasses' id and the 'Transaction Classes' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.874
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.cmasToCmasLinkDefinitions' id and the 'CMAS To CMAS Link Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.874
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.intraPartitionTdqueues' id and the 'Intrapartition TD Queues' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.875
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.mapSetDefinitions' id and the 'Map Set Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.875
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.partnerDefinitions' id and the 'Partner Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.876
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.cicsplexesView' id and the 'CICSplexes' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.876
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.wlmActiveWorkloads' id and the 'Workloads' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.877
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.fileDefinitions' id and the 'File Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.877
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.corbaServerDefinitions' id and the 'CorbaServer Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.878
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.regionGroupDefinitions' id and the 'System Group Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.878
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.lsrPools' id and the 'LSR Pools' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.879
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.osgiBundles' id and the 'OSGi Bundles' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.879
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.libraries' id and the 'LIBRARYs' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.879
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.views.taskAssociations' id and the 'Task Associations' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.880
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.cmasDetails' id and the 'CMAS Details' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.880
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.events' id and the 'RTA Events' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.881
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.localTransactions' id and the 'Local Transactions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.881
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.journalModelDefinitions' id and the 'Journal Model Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.882
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.wmqConnectionDefinitions' id and the 'MQ Connection Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.882
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.jvmServers' id and the 'JVM Servers' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.883
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.processTypeDefinitions' id and the 'Process Type Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.883
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.lsrPoolBuffers' id and the 'LSR Pool Buffers' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.884
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.db2EntryDefinitions' id and the 'DB2 Entry Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.884
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.terminalDefinitions' id and the 'Terminal Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.885
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.sessionDefinitions' id and the 'Session Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.885
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.xmlTransforms' id and the 'XML Transforms' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.886
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.dbctlsss' id and the 'DBCTL Subsystems' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.886
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.workloadTransactions' id and the 'Workload Transactions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.886
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.osgiServices' id and the 'OSGi Services' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.887
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.journalModels' id and the 'Journal Models' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.887
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.remoteFiles' id and the 'Remote Files' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.888
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.workloadTargets' id and the 'Workload Targets' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.888
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.datatables' id and the 'Data Tables' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.889
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.epAdapterSets' id and the 'EP Adapter Sets' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.889
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.tasks' id and the 'Tasks' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.889
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.eventbindings' id and the 'Event Bindings' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.890
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.db2Connections' id and the 'DB2 Connections' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.890
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.journalNames' id and the 'Journal Names' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.891
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.lsrPoolDefinitions' id and the 'LSR Pool Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.891
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.intervalControlRequests' id and the 'Interval Control Requests' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.892
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.ipicConnectionDefinitions' id and the 'IPIC Connection Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.892
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.unitOfWorkLinks' id and the 'Unit of Work Links' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.892
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.taskRelatedUserExits' id and the 'Task Related User Exits' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.893
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.workloadRouters' id and the 'Workload Routers' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.893
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.cicsplexDefinitions' id and the 'CICSplex Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.894
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.activeWorkloadDefinitions' id and the 'Active Workload Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.894
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.completedTasks' id and the 'Completed Tasks' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.894
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.pipelineDefinitions' id and the 'Pipeline Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.895
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.programs' id and the 'Programs' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.896
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.tdQueueDefinitions' id and the 'TD Queue Definitions' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.896
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.sm.ui.views.captureSpecifications' id and the 'Capture Specifications' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-08-15 17:06:11.897
+!MESSAGE Removing part descriptor with the 'com.ibm.cics.core.ui.view.remoteTdqueues' id and the 'Remote TD Queues' description. Points to the invalid 'bundleclass://com.ibm.cics.explorer.tables.ui/com.ibm.cics.explorer.tables.ui.TableView' class.
+!SESSION 2019-08-15 17:09:34.628 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=12.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_SG
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data file:/home/mflupos8888/Documents/GitHub/Mikey_Lupos_Git_Repository/Eclipse_Workbench/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-15 17:09:40.388
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-08-17 21:34:38.285 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=12.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_SG
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-17 21:34:52.405
+!MESSAGE Using Apache MINA sshd as ssh client.
+!SESSION 2019-08-17 21:36:55.264 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=12.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_SG
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-17 21:37:03.617
+!MESSAGE Using Apache MINA sshd as ssh client.

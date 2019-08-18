@@ -2,6 +2,8 @@ package com.luv2code.hibernate.demo;
 
 import java.util.List;
 
+import javax.persistence.TypedQuery;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -60,7 +62,8 @@ public class UpdateStudentDemo {
 			session.beginTransaction();
 			
 			// query the student(s) object
-			List<Student> listOfStudents = session.createQuery("from Student").getResultList();
+			TypedQuery<Student> q = session.createQuery("from Student", Student.class);
+			List<Student> listOfStudents = q.getResultList();
 			
 			System.out.println("List out all Students : Before Updating all emails");
 			printListOfStudents(listOfStudents);
@@ -81,7 +84,8 @@ public class UpdateStudentDemo {
 			session.beginTransaction();
 			
 			// query the student(s) object
-			listOfStudents = session.createQuery("from Student").getResultList();
+			q = session.createQuery("from Student", Student.class);
+			listOfStudents = q.getResultList();
 			
 			System.out.println("List out all Students : After  Updating all emails");
 			printListOfStudents(listOfStudents);
