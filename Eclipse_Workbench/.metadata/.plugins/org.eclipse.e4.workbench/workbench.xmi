@@ -92,11 +92,11 @@
           <tags>persp.actionSet:com.ibm.team.filesystem.shortcuts.locateChangeSets</tags>
           <tags>persp.actionSet:com.ibm.team.jazzhub.client.actionSet</tags>
           <tags>persp.actionSet:com.ibm.teamz.supa.finder.ui.quicksearch</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_70WXYaneEemWQfSUKdD5Vw" selectedElement="_70WXZ6neEemWQfSUKdD5Vw" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_70WXYqneEemWQfSUKdD5Vw" elementId="topLeft" visible="false" containerData="2500" selectedElement="_70WXY6neEemWQfSUKdD5Vw">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_70WXYaneEemWQfSUKdD5Vw" selectedElement="_70WXYqneEemWQfSUKdD5Vw" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_70WXYqneEemWQfSUKdD5Vw" elementId="topLeft" containerData="2500" selectedElement="_70WXY6neEemWQfSUKdD5Vw">
               <tags>noFocus</tags>
-              <tags>Minimized</tags>
               <tags>MinimizedByZoom</tags>
+              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_70WXY6neEemWQfSUKdD5Vw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_7od3gKneEemWQfSUKdD5Vw" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -137,10 +137,8 @@
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_70WXbqneEemWQfSUKdD5Vw" elementId="bottomRight" containerData="3000" selectedElement="_70WXeKneEemWQfSUKdD5Vw">
-                <tags>active</tags>
                 <tags>General</tags>
                 <tags>Maximized</tags>
-                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_70WXb6neEemWQfSUKdD5Vw" elementId="org.eclipse.ui.views.AllMarkersView" toBeRendered="false" ref="_70COUKneEemWQfSUKdD5Vw" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -193,7 +191,7 @@
             </children>
           </children>
         </children>
-        <children xsi:type="advanced:Perspective" xmi:id="_G0ZiULLQEeme3MgXN87btQ" elementId="com.ibm.zosconnect.ui.perspective.ZosConnectPerspective" selectedElement="_G0ZiUbLQEeme3MgXN87btQ" label="z/OS Connect Enterprise Edition" iconURI="platform:/plugin/com.ibm.zosconnect.ui.product/icons/zosconnectee_16.png">
+        <children xsi:type="advanced:Perspective" xmi:id="_G0ZiULLQEeme3MgXN87btQ" elementId="com.ibm.zosconnect.ui.perspective.ZosConnectPerspective.&lt;z/OS Connect Enterprise Edition>" selectedElement="_G0ZiUbLQEeme3MgXN87btQ" label="&lt;z/OS Connect Enterprise Edition>" iconURI="platform:/plugin/com.ibm.zosconnect.ui.product/icons/zosconnectee_16.png">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,"/>
           <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
           <tags>persp.actionSet:org.eclipse.mylyn.tasks.ui.navigation</tags>
@@ -263,7 +261,6 @@
                 <tags>Other</tags>
                 <tags>General</tags>
                 <tags>Maximized</tags>
-                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_G0ZiWrLQEeme3MgXN87btQ" elementId="com.ibm.cics.explorer.connections_view" ref="_G0S0oLLQEeme3MgXN87btQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Host Connections</tags>
@@ -348,6 +345,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1563509264119&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xA;&lt;lastRecentlyUsedFilters/>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_72Gq4KneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -474,8 +473,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_K21mALJtEemo-KakSn1ovw" elementId="org.eclipse.ui.views.ProgressView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -585,7 +582,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_wLscMbM0Eemd29yBMrgCBg" elementId="org.eclipse.pde.runtime.LogView" visible="false"/>
+      <toolbar xmi:id="_wLscMbM0Eemd29yBMrgCBg" elementId="org.eclipse.pde.runtime.LogView"/>
     </sharedElements>
     <trimBars xmi:id="_6k13UaneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.platform">
       <children xsi:type="menu:ToolBar" xmi:id="_7gY5kKneEemWQfSUKdD5Vw" elementId="group.file" toBeRendered="false">
@@ -594,7 +591,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7gauwKneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_L96IIOV4EemZfrtkOaYIBA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_6nRgQ6neEemWQfSUKdD5Vw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_AXfAEFuDEeqbNpcddNXeLg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_6nRgQ6neEemWQfSUKdD5Vw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7gbV0KneEemWQfSUKdD5Vw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -640,7 +637,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7gdLAKneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_L-AOwOV4EemZfrtkOaYIBA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_6nPrE6neEemWQfSUKdD5Vw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_AXj4kFuDEeqbNpcddNXeLg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_6nPrE6neEemWQfSUKdD5Vw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7gdLAaneEemWQfSUKdD5Vw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -683,28 +680,28 @@
         <tags>Draggable</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="_6k13VqneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.platform" side="Left">
+    <trimBars xmi:id="_6k13VqneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.platform" toBeRendered="false" side="Left">
       <children xsi:type="menu:ToolControl" xmi:id="_8fC6MKneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.ide.perspectivestack(minimized)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <persistedState key="XSize" value="1405"/>
         <persistedState key="YSize" value="866"/>
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_QAhc4LkhEemOtNyPBxKSYg" elementId="top_left(IDEWindow).(com.ibm.zosconnect.ui.perspective.ZosConnectPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+      <children xsi:type="menu:ToolControl" xmi:id="_QAhc4LkhEemOtNyPBxKSYg" elementId="top_left(IDEWindow).(com.ibm.zosconnect.ui.perspective.ZosConnectPerspective.&lt;z/OS Connect Enterprise Edition>)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_QBPOkLkhEemOtNyPBxKSYg" elementId="bottom_left(IDEWindow).(com.ibm.zosconnect.ui.perspective.ZosConnectPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+      <children xsi:type="menu:ToolControl" xmi:id="_QBPOkLkhEemOtNyPBxKSYg" elementId="bottom_left(IDEWindow).(com.ibm.zosconnect.ui.perspective.ZosConnectPerspective.&lt;z/OS Connect Enterprise Edition>)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_jnhYoLtFEem_TsBF1CxN_w" elementId="topLeft(IDEWindow).(org.eclipse.jst.j2ee.J2EEPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+      <children xsi:type="menu:ToolControl" xmi:id="_jnhYoLtFEem_TsBF1CxN_w" elementId="topLeft(IDEWindow).(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
     </trimBars>
     <trimBars xmi:id="_6k13V6neEemWQfSUKdD5Vw" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.platform" side="Right">
-      <children xsi:type="menu:ToolControl" xmi:id="_QCRJULkhEemOtNyPBxKSYg" elementId="org.eclipse.ui.editorss(IDEWindow).(com.ibm.zosconnect.ui.perspective.ZosConnectPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+      <children xsi:type="menu:ToolControl" xmi:id="_QCRJULkhEemOtNyPBxKSYg" elementId="org.eclipse.ui.editorss(IDEWindow).(com.ibm.zosconnect.ui.perspective.ZosConnectPerspective.&lt;z/OS Connect Enterprise Edition>)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
@@ -2276,6 +2273,101 @@
       <tags>SHOW_RESTORE_MENU</tags>
     </children>
   </trimContributions>
+  <snippets xsi:type="advanced:Perspective" xmi:id="_JPzEkFuDEeqbNpcddNXeLg" elementId="com.ibm.zosconnect.ui.perspective.ZosConnectPerspective.&lt;z/OS Connect Enterprise Edition>" selectedElement="_JPzEkVuDEeqbNpcddNXeLg" label="&lt;z/OS Connect Enterprise Edition>" iconURI="platform:/plugin/com.ibm.zosconnect.ui.product/icons/zosconnectee_16.png">
+    <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:print,persp.hideToolbarSC:org.eclipse.ui.edit.undo,persp.hideToolbarSC:org.eclipse.ui.edit.redo,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,"/>
+    <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
+    <tags>persp.actionSet:org.eclipse.mylyn.tasks.ui.navigation</tags>
+    <tags>persp.actionSet:org.eclipse.ui.cheatsheets.actionSet</tags>
+    <tags>persp.actionSet:org.eclipse.rse.core.search.searchActionSet</tags>
+    <tags>persp.actionSet:org.eclipse.search.searchActionSet</tags>
+    <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.annotationNavigation</tags>
+    <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.navigation</tags>
+    <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo</tags>
+    <tags>persp.actionSet:org.eclipse.ui.externaltools.ExternalToolsSet</tags>
+    <tags>persp.actionSet:org.eclipse.ui.actionSet.keyBindings</tags>
+    <tags>persp.actionSet:org.eclipse.ui.actionSet.openFiles</tags>
+    <tags>persp.actionSet:org.eclipse.wst.jsdt.chromium.debug.ui.actionSets</tags>
+    <tags>persp.actionSet:com.ibm.cics.tools.db2.runtime.actionSet</tags>
+    <tags>persp.actionSet:com.ez.graph.actionSet</tags>
+    <tags>persp.actionSet:com.ez.workspace.local.database.fragment.actionSet</tags>
+    <tags>persp.actionSet:com.ez.annotations.actionSet</tags>
+    <tags>persp.actionSet:com.ez.java.project.actionSet</tags>
+    <tags>persp.actionSet:com.ibm.rational.welcome.core.webResourcesActionSet</tags>
+    <tags>persp.actionSet:com.ibm.cics.cm.ui.da.actionSet1</tags>
+    <tags>persp.actionSet:com.ibm.ftt.rse.mvs.client.ui.actionSet.search</tags>
+    <tags>persp.actionSet:com.ibm.ftt.rse.mvs.client.ui.actionSet.collectLogs</tags>
+    <tags>persp.actionSet:com.ibm.team.foundation.rcp.ui.OpenArtifactFromClipboard</tags>
+    <tags>persp.actionSet:com.ibm.team.fulltext.ide.ui.JazzArtifactsSearch</tags>
+    <tags>persp.actionSet:com.ibm.team.fulltext.ide.ui.JazzTeamArtifactHistory</tags>
+    <tags>persp.actionSet:com.ibm.team.workitem.rcp.ui.OpenFavoriteSet</tags>
+    <tags>persp.actionSet:com.ibm.team.process.ui.actionSet</tags>
+    <tags>persp.actionSet:com.ibm.magnolia.workitems.searchActionSet</tags>
+    <tags>persp.actionSet:com.ibm.team.workitem.ide</tags>
+    <tags>persp.actionSet:com.ibm.team.filesystem.shortcuts</tags>
+    <tags>persp.actionSet:com.ibm.team.filesystem.shortcuts.locateChangeSets</tags>
+    <tags>persp.actionSet:com.ibm.team.jazzhub.client.actionSet</tags>
+    <tags>persp.actionSet:com.ibm.teamz.supa.finder.ui.quicksearch</tags>
+    <tags>persp.viewSC:org.eclipse.ui.navigator.ProjectExplorer</tags>
+    <tags>persp.viewSC:com.ibm.cics.explorer.connections_view</tags>
+    <tags>persp.viewSC:com.ibm.zosconnect.ui.nav.ZosConnectServerNav</tags>
+    <tags>persp.viewSC:org.eclipse.ui.views.PropertySheet</tags>
+    <tags>persp.viewSC:org.eclipse.ui.views.ProgressView</tags>
+    <tags>persp.viewSC:org.eclipse.ui.views.ProblemView</tags>
+    <tags>persp.newWizSC:com.ibm.zosconnect.ui.wizards.ZosConnectNewApiProjectWizard</tags>
+    <tags>persp.perspSC:com.ibm.magnolia.ui.workItemPerspective</tags>
+    <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
+    <children xsi:type="basic:PartSashContainer" xmi:id="_JPzEkVuDEeqbNpcddNXeLg" selectedElement="_JPzEl1uDEeqbNpcddNXeLg" horizontal="true">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_JPzEkluDEeqbNpcddNXeLg" containerData="2345" selectedElement="_JPzEk1uDEeqbNpcddNXeLg">
+        <children xsi:type="basic:PartStack" xmi:id="_JPzEk1uDEeqbNpcddNXeLg" elementId="top_left" containerData="5000" selectedElement="_JPzElFuDEeqbNpcddNXeLg">
+          <tags>MinimizedByZoom</tags>
+          <children xsi:type="advanced:Placeholder" xmi:id="_JPzElFuDEeqbNpcddNXeLg" elementId="org.eclipse.ui.navigator.ProjectExplorer" closeable="true">
+            <tags>View</tags>
+            <tags>categoryTag:General</tags>
+            <tags>active</tags>
+          </children>
+        </children>
+        <children xsi:type="basic:PartStack" xmi:id="_JPzElVuDEeqbNpcddNXeLg" elementId="bottom_left" visible="false" containerData="5000" selectedElement="_JPzElluDEeqbNpcddNXeLg">
+          <tags>Minimized</tags>
+          <tags>MinimizedByZoom</tags>
+          <children xsi:type="advanced:Placeholder" xmi:id="_JPzElluDEeqbNpcddNXeLg" elementId="com.ibm.zosconnect.ui.nav.ZosConnectServerNav" closeable="true">
+            <tags>View</tags>
+            <tags>categoryTag:Other</tags>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="basic:PartSashContainer" xmi:id="_JPzEl1uDEeqbNpcddNXeLg" containerData="7655" selectedElement="_JPzEmVuDEeqbNpcddNXeLg">
+        <children xsi:type="advanced:Placeholder" xmi:id="_JPzEmFuDEeqbNpcddNXeLg" elementId="org.eclipse.ui.editorss" containerData="7000">
+          <tags>MinimizedByZoom</tags>
+        </children>
+        <children xsi:type="basic:PartStack" xmi:id="_JPzEmVuDEeqbNpcddNXeLg" elementId="bottom" containerData="3000" selectedElement="_JPzEnluDEeqbNpcddNXeLg">
+          <tags>Other</tags>
+          <tags>General</tags>
+          <tags>Maximized</tags>
+          <tags>noFocus</tags>
+          <children xsi:type="advanced:Placeholder" xmi:id="_JPzEmluDEeqbNpcddNXeLg" elementId="com.ibm.cics.explorer.connections_view" closeable="true">
+            <tags>View</tags>
+            <tags>categoryTag:Host Connections</tags>
+          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_JPzEm1uDEeqbNpcddNXeLg" elementId="org.eclipse.ui.views.PropertySheet" closeable="true">
+            <tags>View</tags>
+            <tags>categoryTag:General</tags>
+          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_JPzEnFuDEeqbNpcddNXeLg" elementId="org.eclipse.ui.views.ProgressView" closeable="true">
+            <tags>View</tags>
+            <tags>categoryTag:General</tags>
+          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_JPzEnVuDEeqbNpcddNXeLg" elementId="org.eclipse.ui.views.ProblemView" closeable="true">
+            <tags>View</tags>
+            <tags>categoryTag:General</tags>
+          </children>
+          <children xsi:type="advanced:Placeholder" xmi:id="_JPzEnluDEeqbNpcddNXeLg" elementId="org.eclipse.pde.runtime.LogView" closeable="true">
+            <tags>View</tags>
+            <tags>categoryTag:General</tags>
+          </children>
+        </children>
+      </children>
+    </children>
+  </snippets>
   <commands xmi:id="_6m00UKneEemWQfSUKdD5Vw" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_6mxxEaneEemWQfSUKdD5Vw"/>
   <commands xmi:id="_6m00UaneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_6mwi46neEemWQfSUKdD5Vw"/>
   <commands xmi:id="_6m00UqneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.edit.text.toggleWordWrap" commandName="Toggle Word Wrap" description="Toggle word wrap in the current text editor" category="_6mwi4KneEemWQfSUKdD5Vw"/>
@@ -4516,10 +4608,12 @@
   <addons xmi:id="_6k13YqneEemWQfSUKdD5Vw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
   <addons xmi:id="_6k13Y6neEemWQfSUKdD5Vw" elementId="Cleanup Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.cleanupaddon.CleanupAddon"/>
   <addons xmi:id="_6k13ZKneEemWQfSUKdD5Vw" elementId="DnD Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dndaddon.DnDAddon"/>
-  <addons xmi:id="_6k13ZaneEemWQfSUKdD5Vw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
+  <addons xmi:id="_6k13ZaneEemWQfSUKdD5Vw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon">
+    <persistedState key="com.ibm.zosconnect.ui.perspective.ZosConnectPerspective.&lt;z/OS Connect Enterprise Edition>" value="top_left 2 1#bottom_left 2 2#"/>
+  </addons>
   <addons xmi:id="_6k13ZqneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_6lMcoKneEemWQfSUKdD5Vw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_LeavweV4EemZfrtkOaYIBA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_6mwi4KneEemWQfSUKdD5Vw" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_6mwi4aneEemWQfSUKdD5Vw" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>
